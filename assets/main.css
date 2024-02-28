@@ -1,0 +1,17 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --background-dark-purple: #45227A;
+    --second-background: #7952B3;
+    --primair-color-l-blue: #BEFBFF;
+    --secundair-color-l-purple: #F6EFFF;
+    --teriary-color-yellow: #F6FFBE;
+}
+
+body {
+    background-color: var(--background-dark-purple);
+}
