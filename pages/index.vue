@@ -11,9 +11,10 @@ import '~/assets/main.css'
   <link rel="stylesheet" href="https://use.typekit.net/eyu4tao.css">
 
   <div>
-
-
     <ComingSoonPage/>
+
+
+
 
     <!--    <NavBar />-->
     <!--    <HomePage />-->

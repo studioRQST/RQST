@@ -14,6 +14,7 @@ import '~/assets/main.css'
 
 
  <NuxtLayout>
+   <NuxtLink to="home-page" />
    <NuxtPage/>
  </NuxtLayout>
 
