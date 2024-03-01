@@ -1,6 +1,11 @@
 <script setup lang="ts">
 
 
+import '~/assets/main.css'
+import NavBar from "~/components/navbar/NavBar.vue";
+
+
+
 
 
 
@@ -16,6 +21,8 @@
 
   <div>
 
+
+    <NavBar />
     <HomePage />
 
 

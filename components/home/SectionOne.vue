@@ -1,5 +1,7 @@
 <script setup lang="ts">
+
 import '~/assets/main.css'
+
 
 
 
@@ -19,6 +21,7 @@ import '~/assets/main.css'
 
     <h1> JUST </h1>
     <h2> RQST</h2>
+
 
   </div>
 
