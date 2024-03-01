@@ -1,12 +1,5 @@
 <script setup lang="ts">
-
-
 import '~/assets/main.css'
-
-
-
-
-
 </script>
 
 
@@ -20,11 +13,9 @@ import '~/assets/main.css'
   <div>
 
 
-    <ComingSoonPage/>
-
-<!--    <NavBar />-->
-<!--    <HomePage />-->
-
+ <NuxtLayout>
+   <NuxtPage/>
+ </NuxtLayout>
 
   </div>
 
