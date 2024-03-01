@@ -2,8 +2,6 @@
 
 
 import '~/assets/main.css'
-import NavBar from "~/components/navbar/NavBar.vue";
-
 
 
 
@@ -22,8 +20,10 @@ import NavBar from "~/components/navbar/NavBar.vue";
   <div>
 
 
-    <NavBar />
-    <HomePage />
+    <ComingSoonPage/>
+
+<!--    <NavBar />-->
+<!--    <HomePage />-->
 
 
   </div>
