@@ -5,8 +5,9 @@
 <template>
 <div>
 
-
+<homePijlers />
 <HomeSectionOne />
+
 
 
 </div>

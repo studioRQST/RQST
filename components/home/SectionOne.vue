@@ -19,8 +19,8 @@ import '~/assets/main.css'
   <div>
 
 
-    <h1> JUST </h1>
-    <h2> RQST</h2>
+<!--    <h1> JUST </h1>-->
+<!--    <h2> RQST</h2>-->
 
 
   </div>
