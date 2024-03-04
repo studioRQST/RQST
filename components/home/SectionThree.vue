@@ -12,30 +12,30 @@
     </div>
 
     <div class="flex-container-h3">
-  <h3>CASES</h3>
+      <h3>CASES</h3>
     </div>
 
     <div class="flex-container-par">
-  <p>ONTDEK <span>ONS WERK</span></p>
-<!--  <button>Bekijk meer cases</button>-->
+      <p>ONTDEK<span>ONS WERK</span></p>
+      <button>Bekijk meer cases</button>
     </div>
   </section>
 </template>
 
 <style scoped>
+
 section {
-  margin: 0 2rem 0 2rem;
-  padding: 0 0 0 3rem;
+  position: relative;
+  margin-bottom: 15rem;
 }
 
 h3 {
-  font-size: 15rem;
+  font-size: 20rem;
   position: absolute;
-  top: 310%;
+  top: 50%;
   color: var(--background-dark-purple);
-  -webkit-text-stroke: 0.1px var(--teriary-color-yellow); /* For Chrome and Safari */
-  text-stroke: 0.1px var(--teriary-color-yellow); /* Standard property */
-
+  -webkit-text-stroke: 5px var(--teriary-color-yellow);
+  font-variation-settings: "wdth" 100, "wght" 700;
 }
 
 p {
@@ -53,16 +53,10 @@ span {
   justify-content: center;
   align-items: center;
   gap: 2rem;
-  position: relative;
 }
 
 img {
-  width: 28%;
-}
-
-.flex-container-h3 {
-  display: flex;
-  justify-content: center;
+  width: 30%;
 }
 
 .img-2{
@@ -73,11 +67,17 @@ img {
   margin-top: 40rem;
 }
 
+.flex-container-h3 {
+  display: flex;
+  justify-content: center;
+}
+
 .flex-container-par {
+  position: absolute;
   display: flex;
   flex-direction: column;
   margin-left: 9rem;
-  position: relative;
-  top: -35vh;
+  bottom: 0;
+  padding-bottom: 5rem;
 }
 </style>

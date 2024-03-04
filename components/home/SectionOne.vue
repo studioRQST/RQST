@@ -54,8 +54,7 @@ h1 {
 }
 
 .h1-outline {
-  -webkit-text-stroke: 0.1px var(--teriary-color-yellow); /* For Chrome and Safari */
-  text-stroke: 0.1px var(--teriary-color-yellow); /* Standard property */
+  -webkit-text-stroke: 3px var(--teriary-color-yellow); /* For Chrome and Safari */
   color: transparent;
 }
 
