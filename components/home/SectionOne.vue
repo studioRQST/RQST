@@ -2,10 +2,6 @@
 
 import '~/assets/main.css'
 
-
-
-
-
 </script>
 
 
@@ -43,6 +39,8 @@ import '~/assets/main.css'
 <!-- CSS -->
 <style scoped>
 section {
+  position: relative;
+  z-index: 1;
   background: var(--second-background);
   margin: 2rem 2rem 0 2rem;
   padding: 2rem 0 0 3rem;
@@ -71,8 +69,8 @@ h1 {
   position: absolute;
   display: flex;
   gap: 5rem;
-  top: 77%;
-  left: 14%;
+  top: 65%;
+  left: 13%;
 }
 
 

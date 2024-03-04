@@ -77,6 +77,11 @@ const toggleNavLinks = () => {
 </template>
 
 <style scoped>
+nav {
+  position: relative;
+  z-index: 3;
+}
+
 .flex-nav {
   display: flex;
   flex-direction: row;

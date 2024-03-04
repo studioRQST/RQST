@@ -3,14 +3,14 @@
 </script>
 
 <template>
-<div>
+  <div>
 
-<homePijlers />
-<HomeSectionOne />
+    <homePijlers/>
+    <HomeSectionOne/>
+    <HomeSectionTwo/>
 
 
-
-</div>
+  </div>
 </template>
 
 <style scoped>
