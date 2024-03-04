@@ -9,6 +9,7 @@
     <HomeSectionOne/>
     <HomeSectionTwo/>
     <HomeSectionThree/>
+    <HomeSectionFour/>
 
 
   </div>
