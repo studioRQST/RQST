@@ -15,7 +15,7 @@ import '~/assets/main.css'
     <HomePage/>
 
 
-   
+
 
   </div>
 </template>
