@@ -8,6 +8,7 @@
     <homePijlers/>
     <HomeSectionOne/>
     <HomeSectionTwo/>
+    <HomeSectionThree/>
 
 
   </div>

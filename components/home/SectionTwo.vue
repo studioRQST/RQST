@@ -33,6 +33,10 @@ h2 {
   font-size: 7rem;
 }
 
+p {
+  font-size: 1.2rem;
+}
+
 .span-color {
   color: var(--background-dark-purple);
 }
