@@ -1,58 +1,57 @@
-<script setup lang="ts">
-
-
+<script>
+  
 </script>
 
 <template>
-
   <section>
     <div class="flex-container-text">
-      <p>Ontdek onze passie</p>
+      <p class="title-uppercase">Ontdek onze passie</p>
       <h2>WELKOM BIJ <span class="new-line"><span class="span-color">R</span>E<span class="span-color">Q</span>UE<span
           class="span-color">ST</span></span></h2>
-      <p>Bij RQST vervullen we niet alleen jouw wensen, maar zetten we ook jouw RQST om in een creatieve realiteit.</p>
+      <p>Bij RQST vervullen we niet alleen jouw wensen,<span>maar zetten we ook jouw RQST om in een creatieve realiteit.</span></p>
+    <img src="/static/img/ScrollDown.svg" alt="Scroll naar beneden">
     </div>
   </section>
-
 </template>
 
 <style scoped>
-section {
-  background-color: var(--teriary-color-yellow);
-  margin: 2rem 2rem 0 2rem;
-  padding: 2rem 0 0 3rem;
-  border-radius: 15px 15px 0 0;
-}
 
-h2, p {
-  color: var(--second-background);
-}
+  section {
+    background-color: var(--teriary-color-yellow);
+    margin: 2rem;
+    padding: 3rem;
+    border-radius: 15px;
+    height: 100vh;
+  }
 
-h2 {
-  text-align: center;
-  font-size: 7rem;
-}
+  h2, p  {
+    color: var(--second-background);
+  }
 
-p {
-  font-size: 1.2rem;
-}
+  p{
+    text-align: center;
+  }
 
-.span-color {
-  color: var(--background-dark-purple);
-}
+  p span {
+    display: block;
+  }
 
-.flex-container-text {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 5rem;
-  margin-top: 8rem;
-  padding-bottom: 8rem;
+  .span-color {
+    color: var(--background-dark-purple);
+  }
 
-}
+  .flex-container-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    padding-top: 6rem;
 
-.new-line {
-  display: block;
-}
+  }
+
+  .new-line {
+    display: block;
+  }
+
 </style>

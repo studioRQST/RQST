@@ -12,12 +12,12 @@
     </div>
 
     <div class="flex-container-h3">
-      <h3>CASES</h3>
+      <h3 class="bold-weight">Cases</h3>
     </div>
 
     <div class="flex-container-par">
-      <p>ONTDEK<span>ONS WERK</span></p>
-      <button>Bekijk meer cases</button>
+      <p class="title-uppercase">Ontdek<span>Ons werk</span></p>
+      <button class="primary-button bold-weight">Bekijk meer cases</button>
     </div>
   </section>
 </template>
@@ -35,12 +35,15 @@ h3 {
   top: 50%;
   color: var(--background-dark-purple);
   -webkit-text-stroke: 5px var(--teriary-color-yellow);
-  font-variation-settings: "wdth" 100, "wght" 700;
+  text-transform: uppercase;
 }
 
 p {
   font-size: 3rem;
+  line-height: 3.5rem;
   color: var(--teriary-color-yellow);
+  text-transform: uppercase;
+  margin-bottom: 2rem;
 }
 
 span {
@@ -78,6 +81,6 @@ img {
   flex-direction: column;
   margin-left: 9rem;
   bottom: 0;
-  padding-bottom: 5rem;
 }
+
 </style>

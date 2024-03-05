@@ -15,4 +15,62 @@
 
 body {
     background-color: var(--background-dark-purple);
+    font-variation-settings: "wdth" 115, "wght" 400;
 }
+
+h2{
+    font-variation-settings: "wdth" 110, "wght" 600;
+    font-size: 8rem;
+    text-align: center;
+}
+
+p, a{
+    font-variation-settings: "wdth" 115, "wght" 400;
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+
+.title-uppercase{
+    text-transform: uppercase;
+    font-variation-settings: "wdth" 100, "wght" 700;
+    font-size: 1.5rem
+}
+
+/* BUTTON  */
+
+.primary-button{
+    background-color: var(--teriary-color-yellow);
+    color: var(--background-dark-purple);
+    border: solid 2px var(--teriary-color-yellow);
+    border-radius: 10px;
+    padding: 1.3rem 2rem 1rem 2rem;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+
+.primary-button:hover{
+    background-color: transparent;
+    color: var(--teriary-color-yellow);
+    border: solid 2px var(--teriary-color-yellow);
+    transition: ease-in 0.3s;
+    cursor: pointer;
+}
+
+.primary-button:focus{
+    background-color: transparent;
+    color: var(--primair-color-l-blue);
+    border: solid 2px var(--primair-color-l-blue);
+    outline: var(--primair-color-l-blue);
+    text-decoration: underline; 
+}
+
+/* FONTS  */
+
+.regular-weight{
+    font-variation-settings: "wdth" 115, "wght" 400;
+}
+    
+.bold-weight{
+    font-variation-settings: "wdth" 100, "wght" 700;
+}
+

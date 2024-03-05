@@ -1,14 +1,9 @@
-<script setup lang="ts">
-
-import LogoRqst from "~/components/navbar/LogoRqst.vue";
-</script>
-
 <template>
 
   <main>
 
     <section>
-      <LogoRqst/>
+      <img src="/static/img/LogoRqst.svg" alt="Logo Request">
 
       <h1>Coming Soon</h1>
       <p> webdesign | branding | development</p>

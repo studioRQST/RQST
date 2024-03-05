@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import {ref} from 'vue';
-import LogoNavBar from "~/components/navbar/LogoNavBar.vue";
 
 const showNavLinks = ref(false);
 
@@ -12,10 +11,9 @@ const toggleNavLinks = () => {
 <template>
   <nav>
     <div class="flex-nav">
-      <LogoNavBar/>
+      <img class="logo" src="/static/img/LogoRqst.svg" alt="Logo Request">
       <div class="hamburger-menu" @click="toggleNavLinks">
         <svg class="icon" width="35" height="19" viewBox="0 0 45 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-
           <template v-if="showNavLinks">
             <!-- Close button SVG -->
             <svg class="close-button" width="20" height="20" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -29,106 +27,103 @@ const toggleNavLinks = () => {
             <rect width="45" height="7" rx="3.5" fill="#F6FFBE"/>
             <rect x="13" y="11" width="32" height="8" rx="4" fill="#F6FFBE"/>
           </template>
-
         </svg>
       </div>
     </div>
-
-
-    <div class="list-items-nav">
-    <ul class="nav-links" v-if="showNavLinks">
-      <li>OVER ONS</li>
-      <li>CASES</li>
-      <li>REQUEST</li>
-
-      <div class="icon-social-container">
-        <!-- INSTA-->
-        <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <g clip-path="url(#clip0_104_112)">
-            <path d="M22.0695 17.9197C19.8153 17.9008 17.9468 19.7493 17.9385 22.0071C17.9302 24.2955 19.7598 26.1464 22.0353 26.1511C24.3179 26.1558 26.1676 24.318 26.1735 22.0413C26.1794 19.7847 24.3415 17.9385 22.0707 17.9197H22.0695Z" fill="#F6FFBE"/>
-            <path d="M32.2733 16.2399C32.094 14.7182 31.4641 13.4501 30.1134 12.6279C29.2912 12.1277 28.377 11.9295 27.4274 11.9272C23.9793 11.9177 20.5325 11.9189 17.0844 11.9272C16.6126 11.9284 16.1348 11.9578 15.6724 12.0416C14.0127 12.3412 12.826 13.2436 12.2244 14.8503C11.9601 15.5557 11.8846 16.2918 11.8846 17.0385C11.8835 20.3839 11.8811 23.7293 11.8882 27.0747C11.8882 27.4723 11.9189 27.8733 11.9731 28.2673C12.3235 30.7752 14.0905 32.1082 16.3578 32.2096C18.2499 32.2946 20.1479 32.2273 22.0436 32.2273V32.2509C23.6785 32.2509 25.3147 32.2568 26.9496 32.2474C27.3849 32.245 27.8249 32.2321 28.2543 32.1636C29.9612 31.8923 31.2234 31.0111 31.9182 29.3951C32.2308 28.6672 32.324 27.8958 32.324 27.1101C32.3252 23.9605 32.3264 20.8097 32.3228 17.6602C32.3228 17.1871 32.3287 16.7094 32.2733 16.2411V16.2399ZM21.994 28.4844C18.4316 28.4761 15.5934 25.5825 15.6052 21.9705C15.6158 18.4647 18.5283 15.5852 22.0577 15.5923C25.6013 15.5993 28.5056 18.5107 28.4985 22.0472C28.4914 25.6297 25.5978 28.4926 21.994 28.4844ZM28.7627 16.9028C27.95 16.9111 27.2858 16.2588 27.2787 15.4484C27.2717 14.6415 27.9311 13.9844 28.7497 13.9844C29.5708 13.9844 30.2148 14.6285 30.2125 15.4484C30.2101 16.2517 29.5708 16.8946 28.7639 16.9028H28.7627Z" fill="#F6FFBE"/>
-            <path d="M22 0C9.84987 0 0 9.84987 0 22C0 34.1501 9.84987 44 22 44C34.1501 44 44 34.1501 44 22C44 9.84987 34.1501 0 22 0ZM34.563 27.7601C34.5264 28.0255 34.4887 28.2909 34.4533 28.5564C33.959 32.2403 31.1728 34.4427 27.7872 34.5406C24.2967 34.6409 20.8015 34.5748 17.3086 34.5736C16.7896 34.5736 16.267 34.5642 15.7527 34.5017C13.9325 34.2775 12.3825 33.512 11.1935 32.094C10.087 30.774 9.58681 29.2205 9.57619 27.5195C9.55496 23.924 9.56322 20.3285 9.57265 16.7342C9.57383 16.2635 9.63046 15.7893 9.70005 15.3233C10.0999 12.6479 12.0558 10.5069 14.691 9.86992C15.229 9.74016 15.7834 9.67764 16.3295 9.58445H27.7613C28.0173 9.62102 28.2721 9.66113 28.528 9.69416C31.4405 10.0752 33.7255 12.1655 34.3377 15.0249C34.438 15.492 34.4899 15.9709 34.5642 16.444V27.7636L34.563 27.7601Z" fill="#F6FFBE"/>
-          </g>
-          <defs>
-            <clipPath id="clip0_104_112">
-              <rect width="44" height="44" fill="white"/>
-            </clipPath>
-          </defs>
-        </svg>
-
-        <!-- EMAIL -->
-        <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <g clip-path="url(#clip0_104_110)">
-            <path d="M20.625 0C21.542 0 22.458 0 23.375 0C23.485 0.0240625 23.5941 0.061875 23.7059 0.0704687C27.0265 0.318828 30.146 1.25039 33.0017 2.95711C38.8291 6.4393 42.4084 11.5216 43.6631 18.2093C43.8127 19.0077 43.89 19.8198 44.0009 20.6259V23.3759C43.9768 23.4867 43.9381 23.5959 43.9295 23.7076C43.6399 27.4794 42.4755 30.9624 40.3631 34.0974C36.8577 39.3001 32.0109 42.5064 25.832 43.6597C25.0198 43.8109 24.1948 43.8891 23.3759 44.0009H20.6259C20.5159 43.9768 20.4067 43.939 20.2959 43.9295C15.9139 43.5806 11.9685 42.0784 8.51383 39.3628C4.06742 35.8677 1.32344 31.3268 0.329141 25.7486C0.189062 24.9631 0.108281 24.1665 0 23.375C0 22.458 0 21.542 0 20.625C0.0635937 20.1016 0.117734 19.5774 0.190781 19.0558C0.819844 14.5819 2.61937 10.6399 5.65297 7.2918C9.0518 3.54062 13.2516 1.19883 18.2523 0.331719C19.0386 0.195078 19.8335 0.109141 20.625 0ZM34.0312 15.803C33.7992 15.9354 33.6497 16.0153 33.5045 16.103C29.9355 18.2738 26.3605 20.4359 22.8035 22.6273C22.2054 22.996 21.7353 22.9831 21.1621 22.5775C18.1844 20.4677 15.186 18.3863 12.1937 16.2955C11.5534 15.8477 10.9106 15.4026 10.1612 14.8818C10.0882 15.406 9.9782 15.8357 9.97648 16.2662C9.96273 20.0759 9.96789 23.8855 9.96875 27.6942C9.96875 29.437 11.0327 30.4958 12.7858 30.4958C18.9295 30.4966 25.0731 30.4966 31.2168 30.4958C32.9665 30.4958 34.0295 29.4353 34.0304 27.6908C34.0321 23.9104 34.0304 20.1291 34.0304 16.3487L34.0312 15.803ZM11.807 13.5936C11.7975 13.6331 11.7872 13.6735 11.7777 13.713C15.1972 16.1021 18.6166 18.4912 22.0387 20.882C25.7357 18.6312 29.4104 16.3943 33.1246 14.1333C32.5944 13.677 32.01 13.5025 31.3629 13.5025C25.123 13.5025 18.883 13.5008 12.6431 13.5059C12.3647 13.5059 12.0854 13.5635 11.807 13.5936Z" fill="#F6FFBE"/>
-          </g>
-          <defs>
-            <clipPath id="clip0_104_110">
-              <rect width="44" height="44" fill="white"/>
-            </clipPath>
-          </defs>
-        </svg>
-
-
-      </div>
-    </ul>
-    </div>
-
   </nav>
+
+  <div class="list-items-nav">
+  <ul class="nav-links" v-if="showNavLinks">
+    <p>menu</p>
+    <li><a class="title-uppercase" href="">Over ons</a></li>
+    <li><a class="title-uppercase" href="">Cases</a></li>
+    <li><a class="title-uppercase" href="">Request</a></li>
+
+
+    <div class="icon-social-container">
+      <li><a href="https://www.instagram.com/studio.rqst/">
+        <img src="/static/img/InstagramIconYellow.svg" alt="Instagram Link">
+      </a></li>
+
+      <li><a href="">
+        <img src="/static/img/MailIconYellow.svg" alt="Email Link">
+        </a></li>
+    </div>
+  </ul>
+  </div>
 </template>
 
 <style scoped>
-nav {
-  position: relative;
-  z-index: 3;
-}
 
-.flex-nav {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  background: var(--second-background);
-  margin: 0 2rem 0 2rem;
-  padding: 0 3rem 0 3rem;
-  border-radius: 0 0 15px 15px;
-}
+    nav {
+      position: relative;
+    }
 
-.icon {
-  margin-top: 1.3rem;
-  cursor: pointer; /* Add cursor pointer for better UX */
-}
+    .flex-nav {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      background: var(--second-background);
+      margin: 0 2rem;
+      padding: 1.5rem 3rem;
+      border-radius: 0 0 15px 15px;
+    }
 
-.close-button {
-  margin-top: 1.3rem;
-  z-index: 2;
-}
+    .logo{
+      max-width: 5rem;
+    }
 
-.list-items-nav {
-  background: var(--second-background);
-}
+    .icon {
+      margin-top: 1.5rem;
+      cursor: pointer;
+    }
 
-ul {
-  margin-top: -4rem;
-  margin-left: 5rem;
-  padding-top: 10rem;
-  list-style: none;
-  height: 100vh;
-}
+    .close-button {
+      margin-top: 1.5rem;
+    }
 
-li {
-  font-size: 8rem;
-  color: var(--teriary-color-yellow);
-  font-weight: bold;
-  line-height: 8rem;
-}
+    .list-items-nav {
+      background: var(--second-background);
+    }
 
-.icon-social-container {
-  margin-top: 4rem;
-  margin-left: 1rem;
-}
+    p {
+      color: var(--secundair-color-l-purple);
+      margin: 2rem 0rem 4rem 0rem
+    } 
 
-.icon-social-container svg {
-  margin-right: 1rem;
-}
+    ul {
+      margin-top: -7.5rem;
+      margin-left: 5rem;
+      padding-top: 10rem;
+      list-style-type: none;
+      height: 100vh;
+    }
+
+    a {
+      font-size: 8rem;
+      line-height: 10rem;
+      color: var( --teriary-color-yellow);
+      text-transform: uppercase;
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: var(--secundair-color-l-purple);
+      text-decoration: underline;
+      transition: ease-in 0.3s;
+    }
+
+    a:focus {
+      color: var(--primair-color-l-blue);
+      outline: none;
+      text-decoration: underline;
+    }
+
+    .icon-social-container {
+      display: flex;
+      gap: 2rem;
+      margin-top: 1rem;
+    }
 
 
 </style>
