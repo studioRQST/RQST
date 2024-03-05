@@ -6,9 +6,9 @@
   <section>
 
     <div class="flex-container-images">
-    <img class="img-1" src="/images/img-case-1-example.png">
-    <img class="img-2" src="/images/img-case-1-example.png">
-    <img class="img-3" src="/images/img-case-1-example.png">
+    <img class="img-1" src="/static/img/img-case-1-example.png">
+    <img class="img-2" src="/static/img/img-case-1-example.png">
+    <img class="img-3" src="/static/img/img-case-1-example.png">
     </div>
 
     <div class="flex-container-h3">
