@@ -1,5 +1,30 @@
-<script setup lang="ts">
+<script setup>
+import { onMounted } from 'vue';
+import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
+onMounted(() => {
+  gsap.registerPlugin(ScrollTrigger);
+
+  const images = document.querySelectorAll('.flex-container-images img');
+
+  images.forEach((image, index) => {
+    gsap.from(image, {
+      y: '100%',
+      opacity: 0.1,
+      rotation: 360,
+      duration: 1,
+      scrollTrigger: {
+        trigger: '.flex-container-images',
+        start: 'top 20%',
+        end: 'bottom 80%',
+        scrub: true,
+        markers: true,
+        toggleActions: "play none none none"
+      }
+    });
+  });
+});
 </script>
 
 <template>
@@ -27,6 +52,7 @@
 section {
   position: relative;
   margin-bottom: 15rem;
+  margin-top: -50rem;
 }
 
 h3 {

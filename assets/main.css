@@ -54,6 +54,7 @@ p, a{
     border: solid 2px var(--teriary-color-yellow);
     transition: ease-in 0.3s;
     cursor: pointer;
+    border-radius: 50px;
 }
 
 .primary-button:focus{
@@ -72,5 +73,28 @@ p, a{
     
 .bold-weight{
     font-variation-settings: "wdth" 100, "wght" 700;
+}
+
+/* SVG SCROLL DOWN  */
+
+.scroll-down-svg{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -50px;
+    margin-left: -50px;
+    
+    animation: rotate 1s linear infinite;
+    animation-play-state: paused;
+    animation-delay: calc(var(--scroll) * -1s);
+    
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
+    }
+    
+    @keyframes rotate {
+    to {
+        transform: rotate(360deg);
+    }
 }
 

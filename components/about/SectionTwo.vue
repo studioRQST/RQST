@@ -23,7 +23,7 @@
   section {
       display: flex;
       align-items: center;
-      margin: 15rem 8rem 5rem 8rem;
+      margin: 10rem 8rem 10rem 8rem;
       height: 100vh;
   }
 

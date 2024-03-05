@@ -11,7 +11,9 @@ const toggleNavLinks = () => {
 <template>
   <nav>
     <div class="flex-nav">
-      <img class="logo" src="/static/img/LogoRqst.svg" alt="Logo Request">
+      <NuxtLink class="logo-link" href="/home-page">
+        <img class="logo" src="/static/img/LogoRqst.svg" alt="Logo Request">
+      </NuxtLink>
       <div class="hamburger-menu" @click="toggleNavLinks">
         <svg class="icon" width="35" height="19" viewBox="0 0 45 19" fill="none" xmlns="http://www.w3.org/2000/svg">
           <template v-if="showNavLinks">
@@ -35,9 +37,9 @@ const toggleNavLinks = () => {
   <div class="list-items-nav">
   <ul class="nav-links" v-if="showNavLinks">
     <p>menu</p>
-    <li><a class="title-uppercase" href="">Over ons</a></li>
-    <li><a class="title-uppercase" href="">Cases</a></li>
-    <li><a class="title-uppercase" href="">Request</a></li>
+    <li><NuxtLink class="title-uppercase" href="/over-ons">Over ons</NuxtLink></li>
+    <li><NuxtLink class="title-uppercase" href="">Cases</NuxtLink></li>
+    <li><NuxtLink class="title-uppercase" href="">Request</NuxtLink></li>
 
 
     <div class="icon-social-container">
@@ -69,8 +71,12 @@ const toggleNavLinks = () => {
       border-radius: 0 0 15px 15px;
     }
 
+    .logo-link{
+      line-height: 0;
+    }
+
     .logo{
-      max-width: 5rem;
+      max-width: 80%;
     }
 
     .icon {
