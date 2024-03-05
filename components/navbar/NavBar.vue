@@ -102,7 +102,7 @@ const toggleNavLinks = () => {
       margin-left: 5rem;
       padding-top: 10rem;
       list-style-type: none;
-      height: 100vh;
+      height: 150vh;
     }
 
     a {
