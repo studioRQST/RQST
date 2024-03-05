@@ -1,16 +1,13 @@
-// https://nuxt.com/docs/api/configuration/nuxt-config
-
-import {resolve} from "path";
+import { resolve } from "path";
 
 export default defineNuxtConfig({
-    devtools: {enabled: true},
+  devtools: { enabled: true },
 
-    alias: {
-        "@": resolve(__dirname, "/"),
-    },
+  alias: {
+    "@": resolve(__dirname, "/"),
+  },
 
-    css: [
-        'assets/main.css'
-    ]
+  css: ['assets/main.css'],
 
+  modules: ["nuxt-marquee"], // Voeg deze regel toe
 });

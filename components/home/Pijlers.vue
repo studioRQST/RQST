@@ -1,4 +1,5 @@
 <template>
+  <NuxtMarquee>
   <section>
     <div class="container container-1">
       <p>webdesign</p>
@@ -12,7 +13,14 @@
     <div class="container container-1">
       <p>webdesign</p>
     </div>
+    <div class="container container-2">
+      <p>development</p>
+    </div>
+    <div class="container container-3">
+      <p>branding</p>
+    </div>
   </section>
+  </NuxtMarquee>
 </template>
 
 <style scoped>
@@ -20,7 +28,7 @@
   section {
     display: flex;
     gap: 1rem;
-    margin: 2rem 0rem 0rem -2rem;
+    margin: 2rem 2rem 0rem 0rem;
   }
 
   p {
