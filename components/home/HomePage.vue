@@ -1,44 +1,41 @@
 <template>
   <div>
-    <HomePijlers />
-    <HomeSectionOne ref="sectionOne"/>
-    <HomeSectionTwo ref="sectionTwo"/>
-    <HomeSectionThree />
+    <homePijlers/>
+    <div class="container">
+      <div class="section-one">
+        <HomeSectionOne/>
+      </div>
+      <div class="section-two">
+        <HomeSectionTwo/>
+      </div>
+      <div class="section-three">
+        <HomeSectionThree/>
+      </div>
+    </div>
   </div>
 </template>
 
-<script setup>
-import { ref } from 'vue';
-import { onMounted } from 'vue';
-import { gsap } from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
+<style>
+.container {
+  position: relative;
+}
 
-const sectionOne = ref(null);
-const sectionTwo = ref(null);
+.section-one {
+  position: sticky;
+  top: 2rem;
+  z-index: 1;
+}
 
-onMounted(() => {
-  gsap.registerPlugin(ScrollTrigger);
+.section-two {
+  position: sticky;
+  top: 4rem;
+  z-index: 1;
+}
 
-  gsap.to(sectionTwo.value.$el, {
-    yPercent: -80,
-    opacity: 1,
-    scrollTrigger: {
-      trigger: sectionTwo.value.$el,
-      start: 'top bottom',
-      end: 'bottom top',
-      scrub: true
-    }
-  });
+.section-three {
+  position: sticky;
+  top: 6rem;
+  z-index: 1;
+}
 
-  gsap.to(sectionOne.value.$el, {
-    yPercent: 50,
-    opacity: 1,
-    scrollTrigger: {
-      trigger: sectionTwo.value.$el,
-      start: 'top bottom',
-      end: 'bottom top',
-      scrub: true
-    }
-  });
-});
-</script>
+</style>
