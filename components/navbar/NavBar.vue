@@ -1,15 +1,25 @@
 <script setup lang="ts">
-import {ref} from 'vue';
+import { ref } from 'vue';
 
 const showNavLinks = ref(false);
 
 const toggleNavLinks = () => {
   showNavLinks.value = !showNavLinks.value;
+  if (showNavLinks.value) {
+    // Prevent scrolling
+    document.documentElement.style.overflow = 'hidden';
+    document.body.scroll = 'no';
+  } else {
+    // Re-enable scrolling
+    document.documentElement.style.overflow = '';
+    document.body.scroll = 'yes';
+  }
 }
 </script>
 
 <template>
   <nav>
+
     <div class="flex-nav">
       <NuxtLink class="logo-link" href="/home-page">
         <img class="logo" src="/static/img/LogoRqst.svg" alt="Logo Request">
@@ -35,7 +45,7 @@ const toggleNavLinks = () => {
         </svg>
       </div>
     </div>
-  </nav>
+
 
   <div class="list-items-nav">
     <ul class="nav-links" v-if="showNavLinks">
@@ -62,14 +72,15 @@ const toggleNavLinks = () => {
       </div>
     </ul>
   </div>
+
+  </nav>
 </template>
 
 <style scoped>
 
 
-nav {
-  position: relative;
-}
+
+
 
 .flex-nav {
   display: flex;
@@ -79,7 +90,6 @@ nav {
   margin: 0 2rem;
   padding: 1.5rem 3rem;
   border-radius: 0 0 15px 15px;
-
 }
 
 .logo-link {
@@ -88,25 +98,21 @@ nav {
 
 .logo {
   max-width: 80%;
-  position: fixed;
+  position: relative;
   z-index: 9999;
+
 }
 
 .icon {
   margin-top: 1.5rem;
   cursor: pointer;
-  position: fixed;
+  position: relative;
   z-index: 9999;
-}
-
-.close-button {
-  margin-top: 1.5rem;
 }
 
 .list-items-nav {
   position: fixed;
   z-index: 999;
-  width: 100vw;
 }
 
 p {
@@ -121,8 +127,9 @@ ul {
   padding-right: 5rem;
   padding-top: 10rem;
   list-style-type: none;
-  width: 100%;
+  width: 100vw;
   height: auto;
+  padding-left: 5rem;
 }
 
 
@@ -132,6 +139,7 @@ a {
   color: var(--teriary-color-yellow);
   text-transform: uppercase;
   text-decoration: none;
+
 }
 
 a:hover {
@@ -155,9 +163,3 @@ a:focus {
 
 </style>
 
-<!--ul {-->
-<!--margin-top: -7.5rem;-->
-<!--margin-left: 5rem;-->
-<!--padding-top: 10rem;-->
-<!--list-style-type: none;-->
-<!--}-->
