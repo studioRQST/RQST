@@ -49,9 +49,10 @@ onMounted(() => {
 <style scoped>
 
 section {
+  background-color: var(--background-dark-purple);
   position: relative;
-  margin-bottom: 15rem;
-  margin-top: -50rem;
+  margin: 2rem 2rem 15rem 2rem;
+  border-radius: 15px;
 }
 
 h3 {

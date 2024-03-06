@@ -28,7 +28,7 @@
   section {
     display: flex;
     gap: 1rem;
-    margin: 2rem 2rem 0rem 0rem;
+    margin: 2rem 1rem 0rem 0rem;
   }
 
   p {
