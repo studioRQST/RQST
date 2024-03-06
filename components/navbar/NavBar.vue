@@ -94,7 +94,7 @@ const toggleNavLinks = () => {
 
     p {
       color: var(--secundair-color-l-purple);
-      margin: 2rem 0rem 4rem 0rem
+      margin: 2rem 0 4rem 0;
     } 
 
     ul {
@@ -102,7 +102,7 @@ const toggleNavLinks = () => {
       margin-left: 5rem;
       padding-top: 10rem;
       list-style-type: none;
-      height: 150vh;
+
     }
 
     a {

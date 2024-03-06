@@ -1,3 +1,9 @@
+<script setup>
+
+
+import UspAnimation from "~/components/home/UspAnimation.vue";
+</script>
+
 <!--HTML -->
 <template>
   <link rel="stylesheet" href="https://use.typekit.net/eyu4tao.css">
@@ -10,11 +16,17 @@
 <rect x="187.793" y="0.171753" width="560" height="12.2542" rx="6.12712" fill="#45227A"/>
 <rect x="0.636841" y="0.171753" width="73.5255" height="12.2542" rx="6.12712" fill="#45227A"/>
 </svg>
-
-
     </div>
+
+    <div class="flex-container-usp">
     <h1 class="h1-it bold-weight">IT!</h1>
+    <UspAnimation/>
+    </div>
+
+
+
   </section>
+
 
 
 </template>
@@ -54,6 +66,14 @@ h1 {
   top: 65%;
   left: 23%;
 }
+
+.flex-container-usp {
+  display: flex;
+  flex-direction: row;
+}
+
+
+
 
 
 </style>
