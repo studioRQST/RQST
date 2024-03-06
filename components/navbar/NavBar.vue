@@ -18,9 +18,12 @@ const toggleNavLinks = () => {
         <svg class="icon" width="35" height="19" viewBox="0 0 45 19" fill="none" xmlns="http://www.w3.org/2000/svg">
           <template v-if="showNavLinks">
             <!-- Close button SVG -->
-            <svg class="close-button" width="20" height="20" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect x="33.0006" y="4.30435" width="40.5817" height="6.08726" rx="3.04363" transform="rotate(135 33.0006 4.30435)" fill="#F6FFBE"/>
-              <rect x="4.30432" y="6.10352e-05" width="40.5817" height="6.08726" rx="3.04363" transform="rotate(45 4.30432 6.10352e-05)" fill="#F6FFBE"/>
+            <svg class="close-button" width="20" height="20" viewBox="0 0 33 33" fill="none"
+                 xmlns="http://www.w3.org/2000/svg">
+              <rect x="33.0006" y="4.30435" width="40.5817" height="6.08726" rx="3.04363"
+                    transform="rotate(135 33.0006 4.30435)" fill="#F6FFBE"/>
+              <rect x="4.30432" y="6.10352e-05" width="40.5817" height="6.08726" rx="3.04363"
+                    transform="rotate(45 4.30432 6.10352e-05)" fill="#F6FFBE"/>
             </svg>
           </template>
 
@@ -35,101 +38,126 @@ const toggleNavLinks = () => {
   </nav>
 
   <div class="list-items-nav">
-  <ul class="nav-links" v-if="showNavLinks">
-    <p>menu</p>
-    <li><NuxtLink class="title-uppercase" href="/over-ons">Over ons</NuxtLink></li>
-    <li><NuxtLink class="title-uppercase" href="">Cases</NuxtLink></li>
-    <li><NuxtLink class="title-uppercase" href="">Request</NuxtLink></li>
+    <ul class="nav-links" v-if="showNavLinks">
+      <p>menu</p>
+      <li>
+        <NuxtLink class="title-uppercase" href="/over-ons">Over ons</NuxtLink>
+      </li>
+      <li>
+        <NuxtLink class="title-uppercase" href="">Cases</NuxtLink>
+      </li>
+      <li>
+        <NuxtLink class="title-uppercase" href="">Request</NuxtLink>
+      </li>
 
 
-    <div class="icon-social-container">
-      <li><a href="https://www.instagram.com/studio.rqst/">
-        <img src="/static/img/InstagramIconYellow.svg" alt="Instagram Link">
-      </a></li>
-
-      <li><a href="">
-        <img src="/static/img/MailIconYellow.svg" alt="Email Link">
+      <div class="icon-social-container">
+        <li><a href="https://www.instagram.com/studio.rqst/">
+          <img src="/static/img/InstagramIconYellow.svg" alt="Instagram Link">
         </a></li>
-    </div>
-  </ul>
+
+        <li><a href="">
+          <img src="/static/img/MailIconYellow.svg" alt="Email Link">
+        </a></li>
+      </div>
+    </ul>
   </div>
 </template>
 
 <style scoped>
 
-    nav {
-      position: relative;
-    }
 
-    .flex-nav {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      background: var(--second-background);
-      margin: 0 2rem;
-      padding: 1.5rem 3rem;
-      border-radius: 0 0 15px 15px;
-    }
+nav {
+  position: relative;
+}
 
-    .logo-link{
-      line-height: 0;
-    }
+.flex-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background: var(--second-background);
+  margin: 0 2rem;
+  padding: 1.5rem 3rem;
+  border-radius: 0 0 15px 15px;
 
-    .logo{
-      max-width: 80%;
-    }
+}
 
-    .icon {
-      margin-top: 1.5rem;
-      cursor: pointer;
-    }
+.logo-link {
+  line-height: 0;
+}
 
-    .close-button {
-      margin-top: 1.5rem;
-    }
+.logo {
+  max-width: 80%;
+  position: fixed;
+  z-index: 9999;
+}
 
-    .list-items-nav {
-      background: var(--second-background);
-    }
+.icon {
+  margin-top: 1.5rem;
+  cursor: pointer;
+  position: fixed;
+  z-index: 9999;
+}
 
-    p {
-      color: var(--secundair-color-l-purple);
-      margin: 2rem 0 4rem 0;
-    } 
+.close-button {
+  margin-top: 1.5rem;
+}
 
-    ul {
-      margin-top: -7.5rem;
-      margin-left: 5rem;
-      padding-top: 10rem;
-      list-style-type: none;
+.list-items-nav {
+  position: fixed;
+  z-index: 999;
+  width: 100vw;
+}
 
-    }
+p {
+  color: var(--secundair-color-l-purple);
+  margin: 2rem 0 4rem 0;
+}
 
-    a {
-      font-size: 8rem;
-      line-height: 10rem;
-      color: var( --teriary-color-yellow);
-      text-transform: uppercase;
-      text-decoration: none;
-    }
+ul {
+  background: var(--second-background);
+  position: absolute;
+  margin-top: -7.5rem;
+  padding-right: 5rem;
+  padding-top: 10rem;
+  list-style-type: none;
+  width: 100%;
+  height: auto;
+}
 
-    a:hover {
-      color: var(--secundair-color-l-purple);
-      text-decoration: underline;
-      transition: ease-in 0.3s;
-    }
 
-    a:focus {
-      color: var(--primair-color-l-blue);
-      outline: none;
-      text-decoration: underline;
-    }
+a {
+  font-size: 8rem;
+  line-height: 10rem;
+  color: var(--teriary-color-yellow);
+  text-transform: uppercase;
+  text-decoration: none;
+}
 
-    .icon-social-container {
-      display: flex;
-      gap: 2rem;
-      margin-top: 1rem;
-    }
+a:hover {
+  color: var(--secundair-color-l-purple);
+  text-decoration: underline;
+  transition: ease-in 0.3s;
+}
+
+a:focus {
+  color: var(--primair-color-l-blue);
+  outline: none;
+  text-decoration: underline;
+}
+
+.icon-social-container {
+  display: flex;
+  gap: 2rem;
+  margin-top: 1rem;
+}
 
 
 </style>
+
+<!--ul {-->
+<!--margin-top: -7.5rem;-->
+<!--margin-left: 5rem;-->
+<!--padding-top: 10rem;-->
+<!--list-style-type: none;-->
+<!--}-->
