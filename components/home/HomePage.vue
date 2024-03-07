@@ -16,6 +16,7 @@
 </template>
 
 <style>
+
 .container {
   position: relative;
 }
@@ -28,7 +29,7 @@
 
 .section-two {
   position: sticky;
-  top: 4rem;
+  top: 2rem;
   z-index: 1;
 }
 

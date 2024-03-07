@@ -41,7 +41,9 @@ onMounted(() => {
 
     <div class="flex-container-par">
       <p class="title-uppercase">Ontdek<span>Ons werk</span></p>
+      <NuxtLink href="/cases">
       <button class="primary-button bold-weight">Bekijk meer cases</button>
+      </NuxtLink>
     </div>
   </section>
 </template>

@@ -78,88 +78,83 @@ const toggleNavLinks = () => {
 
 <style scoped>
 
+  .flex-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background: var(--second-background);
+    margin: 0 2rem;
+    padding: 1.5rem 3rem;
+    border-radius: 0 0 15px 15px;
+  }
+
+  .logo-link {
+    line-height: 0;
+  }
+
+  .logo {
+    max-width: 80%;
+    position: relative;
+    z-index: 9999;
+
+  }
+
+  .icon {
+    margin-top: 1.5rem;
+    cursor: pointer;
+    position: relative;
+    z-index: 9999;
+  }
+
+  .list-items-nav {
+    position: fixed;
+    z-index: 999;
+  }
+
+  p {
+    color: var(--secundair-color-l-purple);
+    margin: 2rem 0 4rem 0;
+  }
+
+  ul {
+    background: var(--second-background);
+    position: absolute;
+    margin-top: -7.5rem;
+    padding-right: 5rem;
+    padding-top: 10rem;
+    list-style-type: none;
+    width: 100vw;
+    height: auto;
+    padding-left: 5rem;
+  }
 
 
+  a {
+    font-size: 8rem;
+    line-height: 10rem;
+    color: var(--teriary-color-yellow);
+    text-transform: uppercase;
+    text-decoration: none;
 
+  }
 
-.flex-nav {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  background: var(--second-background);
-  margin: 0 2rem;
-  padding: 1.5rem 3rem;
-  border-radius: 0 0 15px 15px;
-}
+  a:hover {
+    color: var(--secundair-color-l-purple);
+    text-decoration: underline;
+    transition: ease-in 0.3s;
+  }
 
-.logo-link {
-  line-height: 0;
-}
+  a:focus {
+    color: var(--primair-color-l-blue);
+    outline: none;
+    text-decoration: underline;
+  }
 
-.logo {
-  max-width: 80%;
-  position: relative;
-  z-index: 9999;
-
-}
-
-.icon {
-  margin-top: 1.5rem;
-  cursor: pointer;
-  position: relative;
-  z-index: 9999;
-}
-
-.list-items-nav {
-  position: fixed;
-  z-index: 999;
-}
-
-p {
-  color: var(--secundair-color-l-purple);
-  margin: 2rem 0 4rem 0;
-}
-
-ul {
-  background: var(--second-background);
-  position: absolute;
-  margin-top: -7.5rem;
-  padding-right: 5rem;
-  padding-top: 10rem;
-  list-style-type: none;
-  width: 100vw;
-  height: auto;
-  padding-left: 5rem;
-}
-
-
-a {
-  font-size: 8rem;
-  line-height: 10rem;
-  color: var(--teriary-color-yellow);
-  text-transform: uppercase;
-  text-decoration: none;
-
-}
-
-a:hover {
-  color: var(--secundair-color-l-purple);
-  text-decoration: underline;
-  transition: ease-in 0.3s;
-}
-
-a:focus {
-  color: var(--primair-color-l-blue);
-  outline: none;
-  text-decoration: underline;
-}
-
-.icon-social-container {
-  display: flex;
-  gap: 2rem;
-  margin-top: 1rem;
-}
-
+  .icon-social-container {
+    display: flex;
+    gap: 2rem;
+    margin-top: 1rem;
+  }
 
 </style>
 
