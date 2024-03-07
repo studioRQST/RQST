@@ -10,7 +10,7 @@
         <section class="links-contain">
             <ul>
                 <div>
-                    <li><p class="bold-weight">© Studio RQST</p></li>
+                    <li><p class="bold-weight">Copyright © 2024 Studio RQST</p></li>
                     <li><a class="bold-weight" href="">Algemene voorwaarden</a></li>
                 </div>
                 <div>

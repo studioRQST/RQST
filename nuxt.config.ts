@@ -10,7 +10,6 @@ gsap.registerPlugin(Flip, ScrollTrigger, ScrollToPlugin, TextPlugin);
 export default defineNuxtConfig({
   devtools: { enabled: true },
 
-
   css: ['assets/main.css'],
 
   modules: ["nuxt-marquee", "nuxt-aos"],

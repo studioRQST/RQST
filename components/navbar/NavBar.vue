@@ -1,147 +1,150 @@
-<script setup lang="ts">
-import { ref } from 'vue';
+<template>
+  <header class="navigation">
+    <div class="logo">
+      <nuxt-link to="/home-page" class="logo-link">
+        <img src="/static/img/LogoRqst.svg" alt="Logo">
+      </nuxt-link>
+    </div>
+    <div class="menu-icon" @click="toggleNav" v-show="!showNav">
+      <img src="/static/img/HamburgerIcon.svg" alt="Open Menu">
+    </div>
+    <div class="menu-icon" @click="toggleNav" v-show="showNav">
+      <img src="/static/img/CloseIcon.svg" alt="Close Menu">
+    </div>
+      <div class="nav-wrapper" v-if="showNav">
+        <div class="close-icon" @click="toggleNav">
+          <img src="/static/img/CloseIcon.svg" alt="Close Menu">
+        </div>
+        <div class="list-items-nav">
+          <p class="bold-weight">menu</p>
+          <ul class="nav-links">
+            <li>
+              <nuxt-link class="title-uppercase hover-underline-animation" to="/over-ons" @click="closeNav">Over ons</nuxt-link>
+            </li>
+            <li>
+              <nuxt-link class="title-uppercase hover-underline-animation" to="/cases" @click="closeNav">Cases</nuxt-link>
+            </li>
+            <li>
+              <nuxt-link class="title-uppercase hover-underline-animation" to="" @click="closeNav">Request?</nuxt-link>
+            </li>
+          </ul>
+          <div class="icon-social-container">
+            <a class="focus-underline-animation" href="https://www.instagram.com/studio.rqst/">
+              <img src="/static/img/InstagramIconYellow.svg" alt="Instagram Link">
+            </a>
+            <a class="focus-underline-animation" href="mailto:info@rqst.studio">
+              <img src="/static/img/MailIconYellow.svg" alt="Email Link">
+            </a>
+          </div>
+        </div>
+      </div>
+  </header>
+</template>
 
-const showNavLinks = ref(false);
-
-const toggleNavLinks = () => {
-  showNavLinks.value = !showNavLinks.value;
-  if (showNavLinks.value) {
-    // Prevent scrolling
-    document.documentElement.style.overflow = 'hidden';
-    document.body.scroll = 'no';
-  } else {
-    // Re-enable scrolling
-    document.documentElement.style.overflow = '';
-    document.body.scroll = 'yes';
+<script>
+export default {
+  data() {
+    return {
+      showNav: false
+    }
+  },
+  methods: {
+    toggleNav() {
+      this.showNav = !this.showNav;
+      this.toggleBodyScrollLock();
+    },
+    toggleBodyScrollLock() {
+      const body = document.querySelector('body');
+      body.style.overflow = this.showNav ? 'hidden' : 'auto';
+    },
+    closeNav() {
+      this.showNav = false;
+      this.toggleBodyScrollLock();
+    }
   }
 }
 </script>
 
-<template>
-  <nav>
-
-    <div class="flex-nav">
-      <NuxtLink class="logo-link" href="/home-page">
-        <img class="logo" src="/static/img/LogoRqst.svg" alt="Logo Request">
-      </NuxtLink>
-      <div class="hamburger-menu" @click="toggleNavLinks">
-        <svg class="icon" width="35" height="19" viewBox="0 0 45 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <template v-if="showNavLinks">
-            <!-- Close button SVG -->
-            <svg class="close-button" width="20" height="20" viewBox="0 0 33 33" fill="none"
-                 xmlns="http://www.w3.org/2000/svg">
-              <rect x="33.0006" y="4.30435" width="40.5817" height="6.08726" rx="3.04363"
-                    transform="rotate(135 33.0006 4.30435)" fill="#F6FFBE"/>
-              <rect x="4.30432" y="6.10352e-05" width="40.5817" height="6.08726" rx="3.04363"
-                    transform="rotate(45 4.30432 6.10352e-05)" fill="#F6FFBE"/>
-            </svg>
-          </template>
-
-          <template v-else>
-            <!-- Hamburger menu SVG -->
-            <rect width="45" height="7" rx="3.5" fill="#F6FFBE"/>
-            <rect x="13" y="11" width="32" height="8" rx="4" fill="#F6FFBE"/>
-          </template>
-        </svg>
-      </div>
-    </div>
-
-
-  <div class="list-items-nav">
-    <ul class="nav-links" v-if="showNavLinks">
-      <p>menu</p>
-      <li>
-        <NuxtLink class="title-uppercase" href="/over-ons">Over ons</NuxtLink>
-      </li>
-      <li>
-        <NuxtLink class="title-uppercase" href="">Cases</NuxtLink>
-      </li>
-      <li>
-        <NuxtLink class="title-uppercase" href="">Request</NuxtLink>
-      </li>
-
-
-      <div class="icon-social-container">
-        <li><a href="https://www.instagram.com/studio.rqst/">
-          <img src="/static/img/InstagramIconYellow.svg" alt="Instagram Link">
-        </a></li>
-
-        <li><a href="">
-          <img src="/static/img/MailIconYellow.svg" alt="Email Link">
-        </a></li>
-      </div>
-    </ul>
-  </div>
-
-  </nav>
-</template>
-
 <style scoped>
 
-  .flex-nav {
+  root{
+
+    --background-dark-purple: #45227A;
+    --second-background: #7952B3;
+    --primair-color-l-blue: #BEFBFF;
+    --secundair-color-l-purple: #F6EFFF;
+    --teriary-color-yellow: #F6FFBE;
+  }
+
+  img{
+    width: 80%;
+  }
+
+  .navigation {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
-    background: var(--second-background);
+    align-items: center;
+    background-color: var(--second-background);
     margin: 0 2rem;
-    padding: 1.5rem 3rem;
+    padding: 1rem 3rem;
     border-radius: 0 0 15px 15px;
   }
 
-  .logo-link {
-    line-height: 0;
+  .logo img {
+    margin-top: 0.5rem;
   }
 
-  .logo {
-    max-width: 80%;
-    position: relative;
-    z-index: 9999;
-
+  .logo a{
+    line-height: 0rem;
   }
 
-  .icon {
-    margin-top: 1.5rem;
+  .menu-icon img {
     cursor: pointer;
-    position: relative;
-    z-index: 9999;
   }
 
-  .list-items-nav {
-    position: fixed;
-    z-index: 999;
-  }
-
-  p {
-    color: var(--secundair-color-l-purple);
-    margin: 2rem 0 4rem 0;
-  }
-
-  ul {
-    background: var(--second-background);
+  .close-icon {
     position: absolute;
-    margin-top: -7.5rem;
-    padding-right: 5rem;
-    padding-top: 10rem;
-    list-style-type: none;
-    width: 100vw;
-    height: auto;
-    padding-left: 5rem;
+    top: 2.5rem;
+    right: 5rem;
+    cursor: pointer;
+    z-index: 10001;
   }
 
+  .nav-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--second-background);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    overflow: hidden;
+  }
 
-  a {
-    font-size: 8rem;
-    line-height: 10rem;
+  .nav-wrapper .list-items-nav {
+    z-index: 10000;
+  }
+
+  .list-items-nav p {
+    color: var(--secundair-color-l-purple);
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  .nav-links{
+    list-style-type: none;
+    text-align: center;
+  }
+
+  a{
     color: var(--teriary-color-yellow);
+    font-size: 6rem;
+    line-height: 8rem;
     text-transform: uppercase;
     text-decoration: none;
-
-  }
-
-  a:hover {
-    color: var(--secundair-color-l-purple);
-    text-decoration: underline;
-    transition: ease-in 0.3s;
   }
 
   a:focus {
@@ -151,10 +154,43 @@ const toggleNavLinks = () => {
   }
 
   .icon-social-container {
+    position: absolute;
     display: flex;
-    gap: 2rem;
+    gap: 1rem;
     margin-top: 1rem;
+    bottom: 2rem;
+    right: 5rem;
+  }
+
+  .icon-social-container img:hover{
+    width: 90%;
+  }
+
+  /* FOCUS UNDERLINE  */
+
+  .focus-underline-animation {
+    display: inline-block;
+    position: relative;
+    color: var(--teriary-color-yellow)
+  }
+
+  .focus-underline-animation::after {
+    content: '';
+    position: absolute;
+    width: 80%;
+    transform: scaleX(0);
+    height: 5px;
+    bottom: 2rem;
+    left: 0;
+    border-radius: 25px;
+    background-color: var(--primair-color-l-blue);
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+
+  .focus-underline-animation:focus::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
   }
 
 </style>
-
