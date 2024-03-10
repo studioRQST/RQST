@@ -1,3 +1,32 @@
+<script>
+
+import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import {onMounted} from "vue";
+
+onMounted(() => {
+  gsap.registerPlugin(ScrollTrigger);
+
+  gsap.set('#green', {xPercent: -50});
+
+  const rotate = gsap.timeline({
+    scrollTrigger: {
+      trigger: "#wrap",
+      pin: true,
+      scrub: 0.2,
+      start: 'top top',
+      end: '+=10000',
+    }
+  })
+      .to('#green', {
+        rotation: 360 * 5,
+        duration: 1, ease: 'none',
+      });
+});
+
+
+</script>
+
 <template>
   <section>
     <div class="flex-container-text">
@@ -39,5 +68,8 @@
     gap: 5rem;
     padding-top: 6rem;
   }
+
+
+
 
 </style>

@@ -4,7 +4,8 @@
 
 <template>
   <NavbarNavBar/>
-<ContactPage/>
+  <ContactPage/>
+  <Footer/>
 </template>
 
 <style scoped>
