@@ -3,6 +3,7 @@
 </script>
 
 <template>
+  <NavbarNavBar/>
 <ContactPage/>
 </template>
 

@@ -7,6 +7,8 @@
 
     <input type="hidden" name="access_key" value="344c1a49-5984-48fa-9681-609c3baeb98c">
 
+    <input type="hidden" name="redirect" value="https://web3forms.com/success">
+
     <div class="flex-container-contact-form">
 
       <div class="flex-1">
@@ -75,6 +77,10 @@ input {
 
 textarea {
   resize: none;
+}
+
+button {
+  width: 5rem;
 }
 
 
