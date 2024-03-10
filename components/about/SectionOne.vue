@@ -16,7 +16,7 @@
     margin: 2rem;
     padding: 3rem;
     border-radius: 15px;
-    height: 100vh;
+    height: 120vh;
   }
 
   h2{

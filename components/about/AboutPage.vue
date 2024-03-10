@@ -3,5 +3,6 @@
     <AboutSectionOne/>
     <AboutSectionTwo/>
     <AboutSectionThree/>
+    <AboutSectionFour/>
   </div>
 </template>

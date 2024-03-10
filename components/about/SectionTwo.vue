@@ -7,13 +7,17 @@
 <template>
   <section>
     <div>
-      <div data-aos="zoom-in-right" class="about-us-text">
+      <div data-aos="zoom-in-right"
+           data-aos-duration="1500"
+           class="about-us-text">
         <p class="title-uppercase">Over ons</p>
         <p>
           Welkom bij Studio RQST! Wij zijn een creatief webbureau gespecialiseerd in webdesign, development en branding. Ons team is gepassioneerd door het creëren van boeiende digitale ervaringen die jouw merk doen opvallen en impact maken.
         </p>
       </div>
-      <div data-aos="zoom-in-right" class="mission-text">
+      <div data-aos="zoom-in-right"
+           data-aos-duration="1500"
+           class="mission-text">
         <p class="title-uppercase">Over missie</p>
         <p>
           Bij Studio RQST streven we ernaar om de visie van onze klanten om te zetten in werkelijkheid door middel van innovatieve en op maat gemaakte digitale oplossingen. Onze missie is om krachtige en doelgerichte online ervaringen te leveren die zowel inspireren als verbinden.
