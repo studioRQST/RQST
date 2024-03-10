@@ -14,7 +14,7 @@
 
   section {
     background-color: var(--teriary-color-yellow);
-    margin: 2rem 2rem 0rem 2rem;
+    margin: 2rem 2rem 0 2rem;
     padding: 8rem 3rem 0 3rem;
     border-radius: 15px;
     height: 100vh;
@@ -42,6 +42,7 @@
     justify-content: center;
     align-items: center;
     gap: 5rem;
+    margin-top: -2rem;
   }
 
   .new-line {

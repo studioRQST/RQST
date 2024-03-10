@@ -122,10 +122,12 @@ export default {
     align-items: center;
     z-index: 9999;
     overflow: hidden;
+
   }
 
   .nav-wrapper .list-items-nav {
     z-index: 10000;
+
   }
 
   .list-items-nav p {
