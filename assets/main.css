@@ -48,6 +48,7 @@ p, a{
     padding: 1.3rem 2rem 1rem 2rem;
     font-size: 1.2rem;
     text-transform: uppercase;
+    transition: ease-out 0.3s;
 }
 
 .primary-button:hover{
