@@ -3,8 +3,13 @@
     <div>
       <h2>Wat we doen</h2>
     </div>
-    <div class="flex-contain">
-      <div class="container-1">
+    <div
+
+        class="flex-contain">
+      <div
+          data-aos="zoom-in-left"
+          data-aos-duration="1500"
+          class="container-1">
           <p class="title-uppercase">Webdesign</p>
           <hr>
           <p>
@@ -12,7 +17,10 @@
           </p>
           <hr class="separator">
       </div>
-      <div class="container-2">
+      <div
+          data-aos="zoom-in-left"
+          data-aos-duration="1500"
+          class="container-2">
           <p class="title-uppercase">Development</p>
           <hr>
           <p>
@@ -20,7 +28,10 @@
           </p>
           <hr class="separator">
       </div>
-      <div class="container-3">
+      <div
+          data-aos="zoom-in-left"
+          data-aos-duration="1500"
+          class="container-3">
           <p class="title-uppercase">Branding</p>
           <hr>
           <p>
@@ -90,3 +101,5 @@
   }
 
 </style>
+<script setup lang="ts">
+</script>
