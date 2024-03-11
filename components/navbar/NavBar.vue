@@ -92,10 +92,12 @@ export default {
 
   .logo img {
     margin-top: 0.5rem;
+    position: relative;
+    z-index: 10001;
   }
 
   .logo a{
-    line-height: 0rem;
+    line-height: 0;
   }
 
   .menu-icon img {
