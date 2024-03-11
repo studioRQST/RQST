@@ -32,6 +32,7 @@ onMounted(() => {
     <div class="flex-container-text">
       <p class="title-uppercase">Verken onze creatieve wereld</p>
       <h2>Ontdek onze <span>Creaties</span></h2>
+      <ScrollDown/>
     </div>
   </section>
 </template>
@@ -41,9 +42,12 @@ onMounted(() => {
   section {
     background-color: var(--secundair-color-l-purple);
     margin: 2rem;
-    padding: 3rem;
+
     border-radius: 15px;
     height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   p{
@@ -57,6 +61,7 @@ onMounted(() => {
 
   span {
     color: var(--background-dark-purple);
+    display: block;
   }
 
   .flex-container-text {
@@ -65,7 +70,6 @@ onMounted(() => {
     justify-content: center;
     align-items: center;
     gap: 5rem;
-    padding-top: 6rem;
   }
 
 
