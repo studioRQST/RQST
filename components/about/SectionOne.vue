@@ -32,6 +32,7 @@ h2 {
 
 span {
   color: var(--background-dark-purple);
+  display: block;
 }
 
 p {
@@ -46,8 +47,6 @@ p {
   justify-content: center;
   align-items: center;
   gap: 5rem;
-  padding-top: 6rem;
-
 }
 
 </style>
