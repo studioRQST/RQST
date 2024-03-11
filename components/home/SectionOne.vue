@@ -38,7 +38,7 @@ section {
   position: relative;
   background: var(--second-background);
   margin: 2rem 2rem 0 2rem;
-  padding: 3rem 3rem 0rem 3rem;
+  padding: 2rem 3rem 0 3rem;
   border-radius: 15px
 }
 
