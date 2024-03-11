@@ -90,6 +90,14 @@
       text-align: left;
     }
 
+    input[type="text"]::placeholder,
+    input[type="email"]::placeholder,
+    input[type="tel"]::placeholder,
+    textarea::placeholder {
+      color: var(--background-dark-purple);
+    }
+
+
     input:focus {
       outline: solid 2px var(--background-dark-purple);
     }
