@@ -49,7 +49,7 @@
       align-items: center;
       background-color: var(--secundair-color-l-purple);
       margin: 2rem;
-      padding: 10rem 0rem;
+      padding: 10rem 0;
       border-radius: 15px;
   }
 
@@ -59,9 +59,8 @@
     text-align: left;
     font-size: 12rem;
     line-height: 12rem;
-    -webkit-text-stroke: 1px var(--second-background);
-    -webkit-text-fill-color: transparent;
-    margin: 0rem 5rem;
+
+    margin: 0 5rem;
   }
 
   .flex-contain{

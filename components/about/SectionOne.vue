@@ -4,7 +4,11 @@
       <p class="title-uppercase">Maak kennis met ons</p>
       <h2>Ontmoet <span>Request</span></h2>
       <p>Ontdek het verhaal achter RQST en maak kennis met ons team van creatieve geesten.</p>
+      <div class="arrow-component">
+        <ScrollDown />
+      </div>
     </div>
+
   </section>
 </template>
 
