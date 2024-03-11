@@ -3,7 +3,7 @@
 </script>
 
 <template>
-  <a href="">
+  <a>
     <div class="box">
       <span></span>
       <span></span>
