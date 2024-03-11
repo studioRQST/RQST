@@ -67,7 +67,7 @@ p span {
 }
 
 .arrow-component {
-  margin-top: 2rem;
+  margin-top:4rem;
   display: flex;
   justify-content: center;
   align-items: center;
