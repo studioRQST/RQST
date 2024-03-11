@@ -2,7 +2,7 @@
     <footer>
         <section class="contact-contain">
            <div class="flex-container">
-                <h2>STUUR ONS <span>JE REQUEST</span></h2>
+                <h3>STUUR ONS <span>JE REQUEST</span></h3>
                 <p class="contact-text">Samen maken we van jou RQST een realiteit. <span>Neem vandaag nog contact met ons op!</span></p>
                 <button class="primary-button bold-weight">Stuur je request</button>
             </div>`
