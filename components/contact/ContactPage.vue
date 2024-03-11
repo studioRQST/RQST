@@ -1,12 +1,6 @@
-<script setup lang="ts">
-
-</script>
-
 <template>
-
- <ContactForm/>
-
-
+ <ContactSectionOne />
+ <ContactSectionTwo />
 </template>
 
 <style scoped>

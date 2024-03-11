@@ -1,7 +1,7 @@
 <script setup>
 
-
-import UspAnimation from "~/components/home/UspAnimation.vue";
+  import UspAnimation from "~/components/home/UspAnimation.vue";
+  
 </script>
 
 <!--HTML -->

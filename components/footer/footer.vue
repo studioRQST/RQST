@@ -5,7 +5,9 @@
         <h2>STUUR ONS <span>JE REQUEST</span></h2>
         <p class="contact-text">Samen maken we van jou RQST een realiteit.
           <span>Neem vandaag nog contact met ons op!</span></p>
-        <button class="primary-button bold-weight">Stuur je request</button>
+        <NuxtLink href="/contact">
+          <button class="primary-button bold-weight">Stuur je request</button>
+        </NuxtLink>
       </div>
       `
     </section>
@@ -19,7 +21,7 @@
           <li><a href="https://www.instagram.com/studio.rqst/">
             <img src="/static/img/InstagramIcon.svg" alt="Instagram Link">
           </a></li>
-          <li><a href="">
+          <li><a href="mailto:info@rqst.studio">
             <img src="/static/img/MailIcon.svg" alt="Email Link">
           </a></li>
         </div>

@@ -67,15 +67,6 @@ export default {
 
 <style scoped>
 
-  root{
-
-    --background-dark-purple: #45227A;
-    --second-background: #7952B3;
-    --primair-color-l-blue: #BEFBFF;
-    --secundair-color-l-purple: #F6EFFF;
-    --teriary-color-yellow: #F6FFBE;
-  }
-
   img{
     width: 80%;
   }
@@ -149,7 +140,7 @@ export default {
     text-decoration: none;
   }
 
-  a:focus {
+  a:focus-visible {
     color: var(--primair-color-l-blue);
     outline: none;
     text-decoration: underline;
