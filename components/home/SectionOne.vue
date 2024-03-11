@@ -8,6 +8,7 @@ import UspAnimation from "~/components/home/UspAnimation.vue";
 <template>
   <link rel="stylesheet" href="https://use.typekit.net/eyu4tao.css">
   <section>
+
     <h1 class="h1-outline bold-weight">JUST</h1>
     <h1 class="h1-request bold-weight">REQUEST</h1>
 
@@ -39,7 +40,7 @@ section {
   background: var(--second-background);
   margin: 2rem 2rem 0 2rem;
   padding: 2rem 3rem 0 3rem;
-  border-radius: 15px
+  border-radius: 15px;
 }
 
 h1 {

@@ -18,7 +18,7 @@
       <div data-aos="zoom-in-right"
            data-aos-duration="1500"
            class="mission-text">
-        <p class="title-uppercase">Over missie</p>
+        <p class="title-uppercase">Onze missie</p>
         <p>
           Bij Studio RQST streven we ernaar om de visie van onze klanten om te zetten in werkelijkheid door middel van innovatieve en op maat gemaakte digitale oplossingen. Onze missie is om krachtige en doelgerichte online ervaringen te leveren die zowel inspireren als verbinden.
         </p>
