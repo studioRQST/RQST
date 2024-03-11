@@ -5,13 +5,13 @@
         <a class="project-1 bold-weight" href=""><span>Project een</span></a>
       </div>
       <div class="hover-background">
-        <a class="project-2 bold-weight" href="">Project twee</a>
+        <a class="project-2 bold-weight" href=""><span>Project twee</span></a>
       </div>
         <div class="hover-background">
-        <a class="project-3 bold-weight" href="">Project drie</a>
+        <a class="project-3 bold-weight" href=""><span>Project drie</span></a>
         </div>
           <div class="hover-background">
-        <a class="project-4 bold-weight" href="">Project vier</a>
+        <a class="project-4 bold-weight" href=""><span>Project vier</span></a>
           </div>
     </div>
   </section>
@@ -60,27 +60,43 @@
     transition: ease-in 0.3s;
   }
 
-  .project-1 {
-    position: relative;
-    display: inline-block;
-    transition: opacity 0.3s ease-out;
-  }
-
-
-  .project-1:hover span {
+  .hover-background:hover span {
     opacity: 0;
   }
 
-  .project-1:hover:before{
-    content: "PlantSwap";
+  .project-1:hover:before {
+    content: "Coming soon";
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     opacity: 1;
     transition: opacity 0.3s ease-in;
     z-index: 1;
   }
+
+  .project-2:hover:before{
+    content: "Coming soon";
+    position: absolute;
+    opacity: 1;
+    transition: opacity 0.3s ease-in;
+    z-index: 1;
+  }
+
+  .project-3:hover:before{
+    content: "Coming soon";
+    position: absolute;
+    opacity: 1;
+    transition: opacity 0.3s ease-in;
+    z-index: 1;
+  }
+
+  .project-4:hover:before{
+    content: "Coming soon";
+    position: absolute;
+    opacity: 1;
+    transition: opacity 0.3s ease-in;
+    z-index: 1;
+  }
+
+
 
 
 
