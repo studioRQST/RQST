@@ -32,7 +32,6 @@ onMounted(() => {
     <div class="flex-container-text">
       <p class="title-uppercase">Verken onze creatieve wereld</p>
       <h2>Ontdek onze <span>Creaties</span></h2>
-      <img src="/static/img/ScrollDown.svg" alt="Scroll naar beneden">
     </div>
   </section>
 </template>

@@ -4,7 +4,6 @@
       <p class="title-uppercase">Maak kennis met ons</p>
       <h2>Ontmoet <span>Request</span></h2>
       <p>Ontdek het verhaal achter RQST en maak kennis met ons team van creatieve geesten.</p>
-    <img src="/static/img/ScrollDown.svg" alt="Scroll naar beneden">
     </div>
   </section>
 </template>
@@ -16,7 +15,7 @@
     margin: 2rem;
     padding: 3rem;
     border-radius: 15px;
-    height: 120vh;
+    height: 100vh;
   }
 
   h2{
