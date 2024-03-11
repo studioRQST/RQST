@@ -93,7 +93,7 @@ export default {
   .logo img {
     margin-top: 0.5rem;
     position: relative;
-    z-index: 10001;
+    z-index: 10000;
   }
 
   .logo a{
@@ -109,7 +109,7 @@ export default {
     top: 2.5rem;
     right: 5rem;
     cursor: pointer;
-    z-index: 10001;
+    z-index: 10000;
   }
 
   .nav-wrapper {
@@ -124,12 +124,10 @@ export default {
     align-items: center;
     z-index: 9999;
     overflow: hidden;
-
   }
 
   .nav-wrapper .list-items-nav {
-    z-index: 10000;
-
+    z-index: 9999;
   }
 
   .list-items-nav p {

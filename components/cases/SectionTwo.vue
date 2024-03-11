@@ -2,16 +2,16 @@
   <section>
     <div class="flex-container-text">
       <div class="hover-background">
-        <a class="bold-weight" href="">Project een</a>
+        <a class="project-1 bold-weight" href=""><span>Project een</span></a>
       </div>
       <div class="hover-background">
-        <a class="bold-weight" href="">Project twee</a>
+        <a class="project-2 bold-weight" href="">Project twee</a>
       </div>
         <div class="hover-background">
-        <a class="bold-weight" href="">Project drie</a>
+        <a class="project-3 bold-weight" href="">Project drie</a>
         </div>
           <div class="hover-background">
-        <a class="bold-weight" href="">Project vier</a>
+        <a class="project-4 bold-weight" href="">Project vier</a>
           </div>
     </div>
   </section>
@@ -41,6 +41,7 @@
     font-size: 8rem;
     line-height: 8rem;
     text-decoration: none;
+
   }
 
   .hover-background {
@@ -58,6 +59,33 @@
     color: var(--second-background);
     transition: ease-in 0.3s;
   }
+
+  .project-1 {
+    position: relative;
+    display: inline-block;
+    transition: opacity 0.3s ease-out;
+  }
+
+
+  .project-1:hover span {
+    opacity: 0;
+  }
+
+  .project-1:hover:before{
+    content: "PlantSwap";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 1;
+    transition: opacity 0.3s ease-in;
+    z-index: 1;
+  }
+
+
+
+
+
 
 </style>
 <script setup lang="ts">
