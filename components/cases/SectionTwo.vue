@@ -1,16 +1,16 @@
 <template>
   <section>
     <div class="flex-container-text">
-      <div class="hover-background">
+      <div class="hover-background-1">
         <a class="project-1 bold-weight" href=""><span>Project een</span></a>
       </div>
-      <div class="hover-background">
+      <div class="hover-background-2">
         <a class="project-2 bold-weight" href=""><span>Project twee</span></a>
       </div>
-        <div class="hover-background">
+        <div class="hover-background-3">
         <a class="project-3 bold-weight" href=""><span>Project drie</span></a>
         </div>
-          <div class="hover-background">
+          <div class="hover-background-4">
         <a class="project-4 bold-weight" href=""><span>Project vier</span></a>
           </div>
     </div>
@@ -44,23 +44,24 @@
 
   }
 
-  .hover-background {
+  [class^="hover-background"] {
     padding: 2rem 0 0 0;
+    text-align: center;
   }
 
-  .hover-background:hover {
+  [class^="hover-background"]:hover {
     background-color: var(--secundair-color-l-purple);
     width: 100vw;
     text-align: center;
     transition: ease-in 0.3s;
   }
 
-  .hover-background:hover a {
+  [class^="hover-background"]:hover a {
     color: var(--second-background);
     transition: ease-in 0.3s;
   }
 
-  .hover-background:hover span {
+  [class^="hover-background"]:hover span {
     opacity: 0;
   }
 
@@ -68,7 +69,7 @@
     content: "Coming soon";
     position: absolute;
     opacity: 1;
-    transition: opacity 0.3s ease-in;
+    transition: opacity 0.3s;
     z-index: 1;
   }
 
