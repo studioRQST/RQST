@@ -12,12 +12,12 @@
     <h1 class="h1-outline bold-weight">JUST</h1>
     <h1 class="h1-request bold-weight">REQUEST</h1>
 
-    <div class="svg-container">
-      <svg width="797" height="13" viewBox="0 0 797 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <rect x="187.793" y="0.171753" width="560" height="12.2542" rx="6.12712" fill="#45227A"/>
-        <rect x="0.636841" y="0.171753" width="73.5255" height="12.2542" rx="6.12712" fill="#45227A"/>
-      </svg>
-    </div>
+<!--    <div class="svg-container">-->
+<!--      <svg width="797" height="13" viewBox="0 0 797 13" fill="none" xmlns="http://www.w3.org/2000/svg">-->
+<!--        <rect x="187.793" y="0.171753" width="560" height="12.2542" rx="6.12712" fill="#45227A"/>-->
+<!--        <rect x="0.636841" y="0.171753" width="73.5255" height="12.2542" rx="6.12712" fill="#45227A"/>-->
+<!--      </svg>-->
+<!--    </div>-->
 
     <div class="flex-container-usp">
       <h1 class="h1-it bold-weight">IT!</h1>

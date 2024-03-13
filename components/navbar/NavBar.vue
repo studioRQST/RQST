@@ -1,9 +1,9 @@
 <template>
   <header class="navigation">
     <div class="logo">
-      <nuxt-link to="/home-page" class="logo-link">
+      <a href="/home-page" class="logo-link">
         <img src="/static/img/LogoRqst.svg" alt="Logo">
-      </nuxt-link>
+      </a>
     </div>
     <div class="menu-icon" @click="toggleNav" v-show="!showNav">
       <img src="/static/img/HamburgerIcon.svg" alt="Open Menu">
