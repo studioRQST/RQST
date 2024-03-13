@@ -22,7 +22,7 @@ body {
 
 h2{
     font-variation-settings: "wdth" 110, "wght" 600;
-    font-size: 8rem;
+    font-size: clamp(3.5rem, 15vw, 8rem);
     text-align: center;
 }
 
@@ -105,3 +105,65 @@ p, a{
     transform: scaleX(1);
     transform-origin: bottom left;
   }
+
+  /* MEDIAQUERY */
+
+  /* Media query voor groot tablet */
+    @media screen and (max-width: 80rem) {
+        
+        p, a{
+            font-size: 1.4rem;
+            line-height: 1.9rem;
+        }
+        
+        .title-uppercase{
+            font-size: 1.4rem;
+            line-height: 1.9rem;
+        }
+    }
+  
+  /* Media query voor tablet */
+  @media screen and (max-width: 60rem) {
+        
+        p, a{
+            font-size: 1.2rem;
+            line-height: 1.7rem;
+        }
+        
+        .title-uppercase{
+            font-size: 1.3rem;
+            line-height: 1.8rem;
+        }
+
+        .primary-button{
+            font-size: 1rem;
+        }
+    }
+
+  /* Media query voor tablet */
+  @media screen and (max-width: 40rem) {
+        
+        p, a{
+            font-size: 1.1rem;
+            line-height: 1.6rem;
+        }
+        
+        .title-uppercase{
+            font-size: 1.2rem;
+            line-height: 1.7rem;
+        }
+    }
+
+  /* Media query voor tablet */
+  @media screen and (max-width: 30rem) {
+        
+        p, a{
+            font-size: 1.1rem;
+            line-height: 1.6rem;
+        }
+        
+        .title-uppercase{
+            font-size: 1.2rem;
+            line-height: 1.7rem;
+        }
+    }

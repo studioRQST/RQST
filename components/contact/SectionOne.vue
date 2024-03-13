@@ -4,6 +4,7 @@
         <p class="title-uppercase">Wij staan voor je klaar!</p>
         <h2>Heb je een<span>Request?</span></h2>
         <p>Bij Studio RQST luisteren we naar jouw behoeften en staan we<span>klaar om je te helpen bij het realiseren van je projecten.</span></p>
+        <ScrollDownYellow />
       </div>
     </section>
 </template>
@@ -12,9 +13,9 @@
       
     section {
       background-color: var(--second-background);
-      margin: -2rem 2rem 0 2rem;
+      margin: 2rem 2rem 0 2rem;
       padding: 14rem 3rem 0 3rem;
-      border-radius: 0 0 15px 15px;
+      border-radius: 15px;
       height: 100vh;
     }
 

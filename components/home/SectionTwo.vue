@@ -6,7 +6,7 @@
       <h2>WELKOM BIJ<span class="new-line"><span class="span-color">R</span>E<span class="span-color">Q</span>UE<span
           class="span-color">ST</span></span></h2>
       <p>Bij RQST vervullen we niet alleen jouw
-        wensen,<span>maar zetten we ook jouw RQST om in een creatieve realiteit.</span></p>
+        wensen,<span> maar zetten we ook jouw RQST om in een creatieve realiteit.</span></p>
 
 
     </div>
@@ -73,6 +73,20 @@ p span {
   align-items: center;
 }
 
+/* Media queries voor verschillende schermformaten */
+
+@media screen and (max-width: 60rem) {
+  section {
+    padding: 0 3rem;
+  }
+}
+
+@media screen and (max-width: 40rem) {
+  
+  p span {
+    display: inline;
+  }
+
+}
+
 </style>
-<script setup lang="ts">
-</script>

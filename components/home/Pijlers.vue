@@ -59,5 +59,39 @@
     color: var(--teriary-color-yellow);
   }
 
+  /* MEDIAQUERY */
+
+  /* Media query voor groot tablet */
+  @media screen and (max-width: 80rem) {
+        
+        p{
+            font-size: 3rem;
+        }
+
+        .container-1, .container-2, .container-3 {
+          padding: 2rem 3rem 1.7rem 3rem;
+        }
+    }
+  
+  /* Media query voor tablet */
+  @media screen and (max-width: 60rem) {
+        
+        p{
+            font-size: 2.5rem;
+        }
+
+        .container-1, .container-2, .container-3 {
+          padding: 1.7rem 2.7rem 1.4rem 2.7rem;
+        }
+    }
+
+  /* Media query voor tablet */
+  @media screen and (max-width: 40rem) {
+        
+      p{
+            font-size: 2rem;
+        }
+    }
+
 
 </style>

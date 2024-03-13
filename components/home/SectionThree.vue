@@ -112,4 +112,83 @@ img {
   bottom: 0;
 }
 
+/* Media queries voor verschillende schermformaten */
+
+@media screen and (max-width: 80rem) {
+
+  h3 {
+    font-size: 16rem;
+  }
+
+  .flex-container-par {
+    margin-left: 4rem;
+  }
+}
+
+@media screen and (max-width: 60rem) {
+
+  h3 {
+    font-size: 11rem;
+    -webkit-text-stroke: 4px var(--teriary-color-yellow);
+  }
+
+  .flex-container-images {
+    gap: 1rem;
+  }
+
+  .flex-container-par {
+    margin-left: 3rem;
+  }
+
+  .title-uppercase{
+      font-size: 2rem;
+      line-height: 2rem;
+  }
+}
+
+@media screen and (max-width: 40rem) {
+
+  h3 {
+    font-size: 8rem;
+    -webkit-text-stroke: 2px var(--teriary-color-yellow);
+  }
+
+  .flex-container-images {
+    flex-direction: column;
+    gap: 0.7rem;
+  }
+
+  img{
+    width: 50%;
+  }
+
+  .img-2, .img-3{
+    margin: 0;
+  }
+
+  .img-1{
+    margin-right: 15rem;
+  }
+
+  .img-3{
+    margin-left: 15rem;
+  }
+
+  .flex-container-par {
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 30rem) {
+
+  h3 {
+    font-size: 6rem;
+    -webkit-text-stroke: 1px var(--teriary-color-yellow);
+  }
+
+  .flex-container-images {
+    gap: 0.5rem;
+  }
+}
+
 </style>

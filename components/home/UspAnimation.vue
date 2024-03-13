@@ -24,13 +24,13 @@
 .first, .second, .third {
   color: var(--secundair-color-l-purple);
   letter-spacing: 0.1rem;
-  font-size: 7rem;
+  font-size: clamp(1rem, 7vw, 7rem);
   text-transform: uppercase;
 }
 
 .animation {
-  height: 150px;
-  overflow:hidden;
+  height: 10rem;
+  overflow: hidden;
   margin-left: 1rem;
 }
 
@@ -55,6 +55,26 @@
   80% {margin-top: -10.62rem;}
   90% {margin-top: 0;}
   100% {margin-top: 0;}
+}
+
+@media screen and (max-width: 80rem) {
+  
+
+}
+
+@media screen and (max-width: 60rem) {
+
+
+}
+
+@media screen and (max-width: 40rem) {
+
+
+}
+
+@media screen and (max-width: 30rem) {
+
+
 }
 
 

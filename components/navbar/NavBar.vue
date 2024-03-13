@@ -25,7 +25,7 @@
               <nuxt-link class="title-uppercase hover-underline-animation" to="/cases" @click="closeNav">Cases</nuxt-link>
             </li>
             <li>
-              <nuxt-link class="title-uppercase hover-underline-animation" to="/contact" @click="closeNav">Request?</nuxt-link>
+              <nuxt-link class="title-uppercase hover-underline-animation" to="/contact" @click="closeNav">Contact</nuxt-link>
             </li>
           </ul>
           <div class="icon-social-container">
