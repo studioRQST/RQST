@@ -1,17 +1,17 @@
 <template>
   <section>
     <div class="flex-container-text">
-      <div class="hover-background">
-        <a class="bold-weight" href="">Project een</a>
+      <div class="hover-background-1">
+        <a class="project-1 bold-weight" href=""><span>Project een</span></a>
       </div>
-      <div class="hover-background">
-        <a class="bold-weight" href="">Project twee</a>
+      <div class="hover-background-2">
+        <a class="project-2 bold-weight" href=""><span>Project twee</span></a>
       </div>
-        <div class="hover-background">
-        <a class="bold-weight" href="">Project drie</a>
+        <div class="hover-background-3">
+        <a class="project-3 bold-weight" href=""><span>Project drie</span></a>
         </div>
-          <div class="hover-background">
-        <a class="bold-weight" href="">Project vier</a>
+          <div class="hover-background-4">
+        <a class="project-4 bold-weight" href=""><span>Project vier</span></a>
           </div>
     </div>
   </section>
@@ -41,23 +41,68 @@
     font-size: 8rem;
     line-height: 8rem;
     text-decoration: none;
+
   }
 
-  .hover-background {
+  [class^="hover-background"] {
     padding: 2rem 0 0 0;
+    text-align: center;
   }
 
-  .hover-background:hover {
+  [class^="hover-background"]:hover {
     background-color: var(--secundair-color-l-purple);
     width: 100vw;
     text-align: center;
     transition: ease-in 0.3s;
   }
 
-  .hover-background:hover a {
+  [class^="hover-background"]:hover a {
     color: var(--second-background);
     transition: ease-in 0.3s;
   }
+
+  [class^="hover-background"]:hover span {
+    opacity: 0;
+  }
+
+  .project-1:hover:before {
+    content: "Coming soon";
+    position: absolute;
+    opacity: 1;
+    transition: opacity 0.3s;
+    z-index: 1;
+  }
+
+  .project-2:hover:before{
+    content: "Coming soon";
+    position: absolute;
+    opacity: 1;
+    transition: opacity 0.3s ease-in;
+    z-index: 1;
+  }
+
+  .project-3:hover:before{
+    content: "Coming soon";
+    position: absolute;
+    opacity: 1;
+    transition: opacity 0.3s ease-in;
+    z-index: 1;
+  }
+
+  .project-4:hover:before{
+    content: "Coming soon";
+    position: absolute;
+    opacity: 1;
+    transition: opacity 0.3s ease-in;
+    z-index: 1;
+  }
+
+
+
+
+
+
+
 
 </style>
 <script setup lang="ts">

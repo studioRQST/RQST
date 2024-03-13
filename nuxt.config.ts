@@ -7,7 +7,10 @@ import { TextPlugin } from "gsap/TextPlugin";
 
 gsap.registerPlugin(Flip, ScrollTrigger, ScrollToPlugin, TextPlugin);
 
+
 export default defineNuxtConfig({
+
+
   devtools: { enabled: true },
 
   css: ['assets/main.css'],

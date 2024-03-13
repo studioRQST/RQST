@@ -1,12 +1,13 @@
 <script setup>
-import { onMounted } from 'vue';
-import { gsap } from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import {onMounted} from 'vue';
+import {gsap} from 'gsap';
+import {ScrollTrigger} from 'gsap/ScrollTrigger';
 
 onMounted(() => {
   gsap.registerPlugin(ScrollTrigger);
 
   const images = document.querySelectorAll('.flex-container-images img');
+
 
   images.forEach((image, index) => {
     gsap.from(image, {
@@ -15,24 +16,29 @@ onMounted(() => {
       rotation: 360,
       duration: 1,
       scrollTrigger: {
-        trigger: '.flex-container-images',
+        trigger: '.flex-container-images ',
         start: 'top 20%',
         end: 'bottom 80%',
         scrub: true,
         toggleActions: "play none none none"
       }
+
     });
+
   });
+
 });
+
+
 </script>
 
 <template>
-  <section>
+  <section class="section">
 
     <div class="flex-container-images">
-    <img class="img-1" src="/static/img/img-case-1-example.png">
-    <img class="img-2" src="/static/img/img-case-1-example.png">
-    <img class="img-3" src="/static/img/img-case-1-example.png">
+      <img class="img-1" src="/static/img/img-case-1-example.png">
+      <img class="img-2" src="/static/img/img-case-1-example.png">
+      <img class="img-3" src="/static/img/img-case-1-example.png">
     </div>
 
     <div class="flex-container-h3">
@@ -42,7 +48,7 @@ onMounted(() => {
     <div class="flex-container-par">
       <p class="title-uppercase">Ontdek<span>Ons werk</span></p>
       <NuxtLink href="/cases">
-      <button class="primary-button bold-weight">Bekijk meer cases</button>
+        <button class="primary-button bold-weight">Bekijk meer cases</button>
       </NuxtLink>
     </div>
   </section>
@@ -91,7 +97,7 @@ img {
   width: 30%;
 }
 
-.img-2{
+.img-2 {
   margin-top: 20rem;
 }
 
