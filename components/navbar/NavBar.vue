@@ -186,4 +186,22 @@ export default {
     transform-origin: bottom left;
   }
 
+
+  @media screen and (max-width: 40rem) {
+
+    .navigation{
+      margin: 0 1rem;
+    }
+    
+    p, a{
+      font-size: 2rem;
+      line-height: 3rem;
+    }
+  
+    .title-uppercase{
+      font-size: 4rem;
+      line-height: 6rem;
+    }
+}
+
 </style>

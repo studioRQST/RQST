@@ -87,11 +87,14 @@
 
   /* Media query voor tablet */
   @media screen and (max-width: 40rem) {
+
+      section {
+        margin: 1rem 0.5rem 0 0;
+      }
         
-      p{
-            font-size: 2rem;
-        }
+      p {
+        font-size: 2rem;
+      }
     }
-
-
+    
 </style>

@@ -119,5 +119,39 @@ a:focus {
   outline: none;
 }
 
+@media screen and (max-width: 40rem) {
+
+  .contact-contain {
+    margin: 0 1rem;
+    padding: 1rem;
+    border-radius: 15px;
+  }
+
+  .contact-contain h2{
+    padding: 0 1rem;
+  }
+
+  .contact-contain h2 span{
+    display: inline;
+  }
+    
+  .contact-text {
+    font-size: 1.2rem;
+    line-height: 1.7rem;
+  }
+
+  .links-contain{
+    margin: 0 1rem;
+    padding: 1rem;
+  }
+
+  .links-contain {
+    padding: 2rem 2rem 1.5rem 2rem;
+    margin: 1rem;
+    margin-top: -3rem;
+    border-radius: 15px;
+  }
+
+}
 
 </style>

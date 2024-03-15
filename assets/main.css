@@ -146,8 +146,8 @@ p, a{
   @media screen and (max-width: 40rem) {
         
         p, a{
-            font-size: 1.1rem;
-            line-height: 1.6rem;
+            font-size: 1.2rem;
+            line-height: 1.7rem;
         }
         
         .title-uppercase{
