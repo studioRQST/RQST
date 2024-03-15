@@ -199,8 +199,12 @@ export default {
     }
   
     .title-uppercase{
-      font-size: 4rem;
+      font-size: 3.5rem;
       line-height: 6rem;
+    }
+
+    .icon-social-container {
+      bottom: 5rem;
     }
 }
 
