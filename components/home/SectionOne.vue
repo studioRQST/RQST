@@ -74,6 +74,10 @@ h1 {
 
 @media screen and (max-width: 40rem) {
 
+  section{
+    margin: 1rem 1rem 0 1rem;
+  }
+
   h1 {
     line-height: 1.3;
   }

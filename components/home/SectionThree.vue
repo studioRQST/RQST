@@ -1,44 +1,68 @@
-<script setup>
-import {onMounted} from 'vue';
-import {gsap} from 'gsap';
-import {ScrollTrigger} from 'gsap/ScrollTrigger';
+<script>
+import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
-onMounted(() => {
-  gsap.registerPlugin(ScrollTrigger);
+export default {
+  mounted() {
+    gsap.registerPlugin(ScrollTrigger);
 
-  const images = document.querySelectorAll('.flex-container-images img');
-
-
-  images.forEach((image, index) => {
-    gsap.from(image, {
-      y: '100%',
-      opacity: 0.1,
-      rotation: 360,
-      duration: 1,
+    gsap.from('.image-wrapper-1', {
       scrollTrigger: {
-        trigger: '.flex-container-images ',
-        start: 'top 20%',
+        trigger: '.flex-container-images',
+        start: 'top 90%',
         end: 'bottom 80%',
         scrub: true,
-        toggleActions: "play none none none"
-      }
-
+      },
+      y: -100,
+      rotation: -360,
+      opacity: 0,
+      duration: 1,
     });
 
-  });
+    gsap.from('.image-wrapper-2', {
+      scrollTrigger: {
+        trigger: '.flex-container-images',
+        start: 'top 90%',
+        end: 'bottom 80%',
+        scrub: true,
+      },
+      y: -100,
+      rotation: -360,
+      opacity: 0,
+      duration: 1,
+      delay: 0.2,
+    });
 
-});
-
-
+    gsap.from('.image-wrapper-3', {
+      scrollTrigger: {
+        trigger: '.flex-container-images',
+        start: 'top 90%',
+        end: 'bottom 80%',
+        scrub: true,
+      },
+      y: -100,
+      rotation: -360,
+      opacity: 0,
+      duration: 1,
+      delay: 0.4,
+    });
+  },
+};
 </script>
 
-<template>
-  <section class="section">
 
+<template>
+  <section>
     <div class="flex-container-images">
-      <img class="img-1" src="/static/img/img-case-1-example.png">
-      <img class="img-2" src="/static/img/img-case-1-example.png">
-      <img class="img-3" src="/static/img/img-case-1-example.png">
+      <NuxtLink to="/cases" class="image-wrapper-1">
+        <img src="/static/img/img-case-1-example.png">
+      </NuxtLink>
+      <NuxtLink to="/cases" class="image-wrapper-2">
+        <img src="/static/img/img-case-1-example.png">
+      </NuxtLink>
+      <NuxtLink to="/cases" class="image-wrapper-3">
+        <img src="/static/img/img-case-1-example.png">
+      </NuxtLink>
     </div>
 
     <div class="flex-container-h3">
@@ -46,7 +70,7 @@ onMounted(() => {
     </div>
 
     <div class="flex-container-par">
-      <p class="title-uppercase">Ontdek<span>Ons werk</span></p>
+      <p class="title-uppercase">Ontdek<span> ons werk</span></p>
       <NuxtLink href="/cases">
         <button class="primary-button bold-weight">Bekijk meer cases</button>
       </NuxtLink>
@@ -57,17 +81,23 @@ onMounted(() => {
 <style scoped>
 
 section {
-  background-color: var(--background-dark-purple);
   position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--background-dark-purple);
   margin: 2rem 2rem 15rem 2rem;
   border-radius: 15px 15px 0 0;
-
+  height: 100vh;
 }
 
 h3 {
-  font-size: 20rem;
   position: absolute;
   top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); 
+  font-size: 20rem;
   color: var(--background-dark-purple);
   -webkit-text-stroke: 5px var(--teriary-color-yellow);
   text-transform: uppercase;
@@ -76,7 +106,7 @@ h3 {
 p {
   font-size: 3rem;
   line-height: 3.5rem;
-  color: var(--teriary-color-yellow);
+  color: var(--tertiary-color-yellow);
   text-transform: uppercase;
   margin-bottom: 2rem;
 }
@@ -86,6 +116,7 @@ span {
 }
 
 .flex-container-images {
+  width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -93,30 +124,48 @@ span {
   gap: 2rem;
 }
 
-img {
-  width: 30%;
+.image-wrapper-1, .image-wrapper-2, .image-wrapper-3 {
+  width: 30rem;
+  height: 35rem;
+  position: relative;
+  border-radius: 15px;
+  overflow: hidden;
 }
 
-.img-2 {
-  margin-top: 20rem;
+.image-wrapper-1 {
+  margin-top: -10rem;
 }
 
-.img-3 {
-  margin-top: 40rem;
+.image-wrapper-3 {
+  margin-top: 10rem;
 }
 
-.flex-container-h3 {
-  display: flex;
-  justify-content: center;
+img:hover {
+  transform: scale(1.3);
+  transition: transform 0.3s ease;
+  opacity: 0.8;
+}
+
+.img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .flex-container-par {
   position: absolute;
   display: flex;
+  justify-content: center;
   flex-direction: column;
-  margin-left: 9rem;
   bottom: 0;
+  left: 5%;
 }
+
+.title-uppercase{
+  color: var(--teriary-color-yellow);
+  margin-bottom: 1rem;
+}
+
 
 /* Media queries voor verschillende schermformaten */
 
@@ -154,6 +203,12 @@ img {
 
 @media screen and (max-width: 40rem) {
 
+  section{
+    margin: 1rem 1rem 0 1rem;
+    height: auto;
+    padding-bottom: 11rem;
+  }
+
   h3 {
     font-size: 8rem;
     -webkit-text-stroke: 2px var(--teriary-color-yellow);
@@ -161,35 +216,38 @@ img {
 
   .flex-container-images {
     flex-direction: column;
-    gap: 0.7rem;
+    margin: 10rem 0 5rem 0;
+  }
+
+  .image-wrapper-1, .image-wrapper-2, .image-wrapper-3 {
+    width: 90%;
+    height: 20rem;
+    margin-top: 0.5rem;
   }
 
   img{
-    width: 50%;
-  }
-
-  .img-2, .img-3{
-    margin: 0;
-  }
-
-  .img-1{
-    margin-right: 15rem;
-  }
-
-  .img-3{
-    margin-left: 15rem;
+    width: 100%;
+    height: auto;
   }
 
   .flex-container-par {
     margin: 0;
+    padding: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    margin-bottom: 2.5rem;
+  }
+
+  .title-uppercase span{
+    display: inline;
   }
 }
 
 @media screen and (max-width: 30rem) {
 
   h3 {
-    font-size: 6rem;
-    -webkit-text-stroke: 1px var(--teriary-color-yellow);
+    font-size: 7rem;
   }
 
   .flex-container-images {

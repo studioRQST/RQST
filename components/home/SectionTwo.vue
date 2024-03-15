@@ -5,7 +5,7 @@
       <p class="title-uppercase">Ontdek onze passie</p>
       <h2>WELKOM BIJ<span class="new-line"><span class="span-color">R</span>E<span class="span-color">Q</span>UE<span
           class="span-color">ST</span></span></h2>
-      <p>Bij RQST vervullen we niet alleen jouw
+      <p>Bij Studio RQST vervullen we niet alleen jouw
         wensen,<span> maar zetten we ook jouw RQST om in een creatieve realiteit.</span></p>
 
 
@@ -82,6 +82,10 @@ p span {
 }
 
 @media screen and (max-width: 40rem) {
+
+  section{
+    margin: 1rem 1rem 0 1rem;
+  }
   
   p span {
     display: inline;
