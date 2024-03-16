@@ -98,7 +98,42 @@
   }
 
 
+  /* Media queries voor verschillende schermformaten */
 
+  /* LAPTOP */
+  @media screen and (max-width: 80rem) {
+    a {
+      font-size: 6rem;
+    }
+
+  [class^="hover-background"] {
+    padding: 0;
+  }
+
+  }
+
+  /* TABLET */
+  @media screen and (max-width: 60rem) {
+    a {
+      font-size: 5rem;
+    }
+  }
+
+  /* MOBILE L */
+  @media screen and (max-width: 30rem) {
+    a {
+      font-size: 2rem;
+    }
+
+    .flex-container-text {
+      padding: 0;
+      gap: 2rem
+    }
+
+
+
+
+  }
 
 
 
