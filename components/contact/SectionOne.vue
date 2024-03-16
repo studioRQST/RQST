@@ -62,7 +62,7 @@
     }
 
     /* Media queries voor verschillende schermformaten */
-    
+
     /* LAPTOP */
     @media screen and (max-width: 80rem) {
       h2 {
@@ -70,7 +70,7 @@
       }
     }
 
-    /* LAPTOP */
+    /* TABLET */
     @media screen and (max-width: 60rem) {
       section {
         margin: 2rem 2rem 0 2rem;
@@ -93,11 +93,13 @@
       }
 
       h2 {
-        font-size: 2.9rem;
+        font-size: 3rem;
+        width: 90vw;
       }
 
       .p-intro {
         font-size: 1rem;
+        width: 70vw;
       }
     }
 

@@ -125,4 +125,11 @@
       border: solid 2px var(--second-background);
     }
 
+    /* MOBILE L */
+    @media screen and (max-width: 30rem) {
+      .flex-1, .flex-2{
+        flex-direction: column;
+      }
+    }
+
 </style>
