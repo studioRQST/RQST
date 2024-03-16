@@ -15,7 +15,7 @@
       <ul>
         <div>
           <li><p class="bold-weight">Copyright © 2024 Studio RQST</p></li>
-          <li><a class="bold-weight" href="">Algemene voorwaarden</a></li>
+         <nuxt-link to="terms-conditions"> <li><a class="bold-weight" href="">Algemene voorwaarden</a></li></nuxt-link>
         </div>
         <div>
           <li><a href="https://www.instagram.com/studio.rqst/">
@@ -155,3 +155,5 @@ a:focus {
 }
 
 </style>
+<script setup lang="ts">
+</script>
