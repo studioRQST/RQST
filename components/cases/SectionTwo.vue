@@ -5,10 +5,10 @@
         <a class="project-1 bold-weight" href="/project-een"><span>Project een</span></a>
       </div>
       <div class="hover-background-2">
-        <a class="project-2 bold-weight" href="/"><span>Project twee</span></a>
+        <a class="project-2 bold-weight" href="/project-twee"><span>Project twee</span></a>
       </div>
         <div class="hover-background-3">
-        <a class="project-3 bold-weight" href="/"><span>Project drie</span></a>
+        <a class="project-3 bold-weight" href="/project-drie"><span>Project drie</span></a>
         </div>
     </div>
   </section>
@@ -20,7 +20,7 @@
       margin: 2rem;
       padding: 3rem;
       border-radius: 15px;
-      height: 100vh;
+      height: auto;
   }
 
   .flex-container-text {
@@ -109,10 +109,6 @@
 
   /* MOBILE L */
   @media screen and (max-width: 30rem) {
-    section {
-      height: 110vh;
-    }
-
 
     a {
       font-size: 2rem;

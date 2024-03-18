@@ -1,6 +1,10 @@
 <template>
   <section class="wrapper">
-    <img src="/static/img/annemou-impressie.png" alt="">
+    <img src="/static/img/annemou-impressie-1.png" alt="Annemou Logo">
+    <img src="/static/img/annemou-impressie-2.png" alt="Annemou Impressie Website">
+    <img src="/static/img/annemou-impressie-3.png" alt="Annemou Kleuren">
+    <img src="/static/img/annemou-impressie-4.png" alt="Annemou Impressie Website Mobiel">
+    <img src="/static/img/annemou-impressie-5.png" alt="Annemou Typografie">
   </section>
 
 </template>
@@ -16,8 +20,9 @@
   }
 
   img{
-    width: 100%;
+    width: 100vw;
     height: auto;
+    margin: -1rem;
   }
 
   @media screen and (max-width: 30rem) {

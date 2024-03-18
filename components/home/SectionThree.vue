@@ -54,13 +54,13 @@ export default {
 <template>
   <section>
     <div class="flex-container-images">
-      <NuxtLink to="/cases" class="image-wrapper-1">
+      <NuxtLink to="/project-een" class="image-wrapper-1">
         <img src="/static/img/annemou-mockup-devices.png">
       </NuxtLink>
-      <NuxtLink to="/cases" class="image-wrapper-2">
+      <NuxtLink to="/project-twee" class="image-wrapper-2">
         <img src="/static/img/lux-mockup-devices.png">
       </NuxtLink>
-      <NuxtLink to="/cases" class="image-wrapper-3">
+      <NuxtLink to="/project-drie" class="image-wrapper-3">
         <img src="/static/img/tjoektjoek-mockup-devices.png">
       </NuxtLink>
     </div>

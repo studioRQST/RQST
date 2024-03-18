@@ -98,8 +98,8 @@
 
   .overlay_0 {
     inset: 0;
-    opacity: 0.4;
-    background: var(--teriary-color-yellow)
+    opacity: 0.5;
+    background: white
   }
  
     /* Media queries voor verschillende schermformaten */
@@ -118,7 +118,7 @@
       }
 
       section {
-        flex-direction: column;
+        flex-direction: column-reverse;
         height: 100vh;
       }
 
