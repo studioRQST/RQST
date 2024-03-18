@@ -111,7 +111,8 @@
   @media screen and (max-width: 30rem) {
 
     a {
-      font-size: 2rem;
+      font-size: 2.5rem;
+      border-bottom: solid 3px;
     }
 
     .flex-container-text {
@@ -121,10 +122,4 @@
     }
   }
 
-
-
-
-
 </style>
-<script setup lang="ts">
-</script>

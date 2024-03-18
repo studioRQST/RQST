@@ -87,7 +87,7 @@ h1 {
   }
 
   .h1-request{
-    font-size: 3.5rem;
+    font-size: 4rem;
   }
 }
 
