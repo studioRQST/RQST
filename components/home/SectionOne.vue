@@ -67,7 +67,7 @@ h1 {
 @media screen and (max-width: 60rem) {
 
   h1 {
-    line-height: 1.2;
+    line-height: 1.4;
   }
 
 }
@@ -79,7 +79,7 @@ h1 {
   }
 
   h1 {
-    line-height: 1.3;
+    line-height: 1.5;
   }
 
   .h1-outline {
@@ -91,7 +91,7 @@ h1 {
 @media screen and (max-width: 30rem) {
 
   h1 {
-    line-height: 1.4;
+    line-height: 1.5;
   }
 
 }

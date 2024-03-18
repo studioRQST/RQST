@@ -144,7 +144,6 @@ a:focus {
 
 
 /* Media queries voor verschillende schermformaten */
-
 /* LAPTOP */
 @media screen and (max-width: 80rem) {
   h2 {
@@ -179,7 +178,7 @@ a:focus {
   }
 
   .links-contain {
-    margin: -2rem 1rem 0 1rem;
+    margin: -2rem 1rem 1rem 1rem;
   }
 
   h2 {
@@ -209,8 +208,7 @@ a:focus {
     gap: 1rem;
   }
 }
-
-
 </style>
+
 <script setup lang="ts">
 </script>

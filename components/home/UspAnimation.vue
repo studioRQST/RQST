@@ -57,24 +57,34 @@
   100% {margin-top: 0;}
 }
 
-@media screen and (max-width: 80rem) {
-  
 
+@media screen and (max-width: 80rem) {
+  .container {
+    margin-top: -2.5rem;
+    height: 1rem;
+    font-size: 1rem;
+  }
 }
+
 
 @media screen and (max-width: 60rem) {
 
 
 }
 
-@media screen and (max-width: 40rem) {
-
-
-}
 
 @media screen and (max-width: 30rem) {
+  .container {
+    margin-top: -1rem;
+}
 
+  .animation {
+    height: 3rem;
+  }
 
+  .animation > div > div {
+    height: 5rem;
+  }
 }
 
 

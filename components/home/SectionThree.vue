@@ -157,7 +157,7 @@ img:hover {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  bottom: 0;
+  bottom: -15vh;
   left: 5%;
 }
 
@@ -176,7 +176,7 @@ img:hover {
   }
 
   .flex-container-par {
-    margin-left: 4rem;
+    bottom: -20vh;
   }
 }
 
@@ -231,6 +231,7 @@ img:hover {
   }
 
   .flex-container-par {
+    bottom: 2vh;
     margin: 0;
     padding: 0;
     left: 50%;

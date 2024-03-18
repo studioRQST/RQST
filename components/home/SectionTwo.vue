@@ -5,8 +5,7 @@
       <p class="title-uppercase">Ontdek onze passie</p>
       <h2>WELKOM BIJ<span class="new-line"><span class="span-color">R</span>E<span class="span-color">Q</span>UE<span
           class="span-color">ST</span></span></h2>
-      <p>Bij Studio RQST vervullen we niet alleen jouw
-        wensen,<span> maar zetten we ook jouw RQST om in een creatieve realiteit.</span></p>
+      <p>Bij Studio RQST vervullen we niet alleen jouw wensen,<span> maar zetten we ook jouw RQST om in een creatieve realiteit.</span></p>
 
 
     </div>
@@ -75,18 +74,45 @@ p span {
 
 /* Media queries voor verschillende schermformaten */
 
-@media screen and (max-width: 60rem) {
-  section {
-    padding: 0 3rem;
+/* LAPTOP */
+@media screen and (max-width: 80rem) {
+  h2 {
+    font-size: 6rem;
   }
 }
 
-@media screen and (max-width: 40rem) {
+/* TABLET */
+@media screen and (max-width: 60rem) {
+  section {
+    margin: 2rem 2rem 0 2rem;
+  }
 
-  section{
+
+  h2 {
+    font-size: 5rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+}
+
+/* MOBILE L */
+@media screen and (max-width: 30rem) {
+  section {
     margin: 1rem 1rem 0 1rem;
   }
-  
+
+  h2 {
+    font-size: 3rem;
+    width: 90vw;
+  }
+
+  p {
+    font-size: 1rem;
+    width: 70vw;
+  }
+
   p span {
     display: inline;
   }
