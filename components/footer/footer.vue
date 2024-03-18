@@ -103,7 +103,7 @@ span {
 .flex-socials ul {
   display: flex;
   flex-direction: row;
-  gap: 2rem;
+  gap: 1rem;
 }
 
 ul {
@@ -189,7 +189,7 @@ a:focus {
   p, span {
     display: inline;
     width: 70vw;
-    
+
   }
 
   .flex-footer {
