@@ -186,8 +186,10 @@ a:focus {
     width: 90vw;
   }
 
-  p {
-    width: 80vw;
+  p, span {
+    display: inline;
+    width: 70vw;
+    
   }
 
   .flex-footer {
