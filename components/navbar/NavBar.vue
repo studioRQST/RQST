@@ -1,7 +1,7 @@
 <template>
   <header class="navigation">
     <div class="logo">
-      <a href="/home-page" class="logo-link">
+      <a href="/" class="logo-link">
         <img src="/static/img/LogoRqst.svg" alt="Logo">
       </a>
     </div>
