@@ -1,5 +1,5 @@
 <template>
   <NavbarNavBar/>
-  <ContactPage/>
-  <Footer/>
+    <ContactPage/>
+  <Footer></Footer>
 </template>

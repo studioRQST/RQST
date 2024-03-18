@@ -55,6 +55,7 @@
     padding: 0.3rem 1.5rem 0.1rem 1.5rem;
     border: solid 2px var(--background-dark-purple);
     border-radius: 25px;
+    max-width: fit-content;
   }
 
   .tag-line p{
@@ -107,7 +108,6 @@
     @media screen and (max-width: 80rem) {
       h2 {
         font-size: 6rem;
-        color: aquamarine;
       }
     }
   
@@ -115,7 +115,6 @@
     @media screen and (max-width: 60rem) {
       h2 {
         font-size: 5rem;
-        color: orange;
       }
 
       section {
@@ -155,8 +154,16 @@
   
       h2 {
         font-size: 3rem;
-        color: red;
       }
+
+      .sub-tags{
+        flex-direction: column;
+      }
+
+      .flex-container-text{
+        max-width: fit-content;
+      }
+
     }
 
   </style>

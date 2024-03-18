@@ -1,13 +1,5 @@
-<script setup lang="ts">
-
-</script>
-
 <template>
   <NavbarNavBar/>
-<FooterTermsConditions />
-  <Footer />
+    <FooterTermsConditions />
+  <Footer></Footer>
 </template>
-
-<style scoped>
-
-</style>

@@ -1,16 +1,10 @@
-<script setup lang="ts">
-
-</script>
-
 <template>
   <section>
     <div class="flex-container">
       <h1> Bedankt voor je <span>RQST</span>, we nemen zo <span>spoedig</span> mogelijk contact met je op!</h1>
-
      <nuxt-link class="custom-link" to="/contact">Ga terug</nuxt-link>
     </div>
   </section>
-
 </template>
 
 <style scoped>
