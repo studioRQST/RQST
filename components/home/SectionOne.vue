@@ -86,6 +86,9 @@ h1 {
     -webkit-text-stroke: 2px var(--secundair-color-l-purple);
   }
 
+  .h1-request{
+    font-size: 3.5rem;
+  }
 }
 
 </style>

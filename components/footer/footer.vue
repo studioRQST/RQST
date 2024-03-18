@@ -75,7 +75,7 @@ span {
 
 .links-contain {
   background-color: var(--secundair-color-l-purple);
-  padding: 2.5rem 2.5rem 2rem 2.5rem;
+  padding: 2.5rem 2.5rem 1.5rem 2.5rem;
   margin: 2rem;
   margin-top: -5rem;
   border-radius: 20px;
@@ -187,7 +187,7 @@ a:focus {
 
   .contact-text {
     font-size: 1rem;
-    line-height: 1.6rem;
+    line-height: 1.7rem;
   }
 
   .flex-footer {
