@@ -13,7 +13,6 @@
 
     <section class="links-contain">
       <div class="flex-footer">
-
         <div class="flex-text">
         <ul>
           <li><p class="bold-weight">Copyright © 2024 Studio RQST</p></li>
@@ -22,7 +21,6 @@
           </nuxt-link>
         </ul>
         </div>
-
           <div class="flex-socials">
             <ul>
             <li><a href="https://www.instagram.com/studio.rqst/">
@@ -33,8 +31,6 @@
             </a></li>
             </ul>
           </div>
-
-
       </div>
     </section>
 
@@ -76,9 +72,6 @@ span {
   flex-direction: column;
   gap: 4rem;
 }
-
-
-
 
 .links-contain {
   background-color: var(--secundair-color-l-purple);
@@ -179,6 +172,7 @@ a:focus {
 
   .links-contain {
     margin: -2rem 1rem 1rem 1rem;
+    padding: 2rem 2.5rem 1.4rem 2.5rem;
   }
 
   h2 {
@@ -189,7 +183,11 @@ a:focus {
   p, span {
     display: inline;
     width: 70vw;
+  }
 
+  .contact-text {
+    font-size: 1rem;
+    line-height: 1.6rem;
   }
 
   .flex-footer {
@@ -211,6 +209,3 @@ a:focus {
   }
 }
 </style>
-
-<script setup lang="ts">
-</script>
