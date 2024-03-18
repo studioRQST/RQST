@@ -52,6 +52,7 @@ section {
   background-color: var(--secundair-color-l-purple);
   margin: 2rem;
   border-radius: 15px;
+  overflow: clip;
 }
 
 
@@ -102,6 +103,62 @@ p {
   color: var(--second-background);
   margin-left: auto;
   opacity: 0.3;
+}
+
+/* Media queries voor verschillende schermformaten */
+
+/* LAPTOP */
+@media screen and (max-width: 80rem) {
+  h2 {
+    font-size: 6rem;
+  }
+}
+
+/* TABLET */
+@media screen and (max-width: 60rem) {
+  section {
+    margin: 2rem 2rem 0 2rem;
+    flex-direction: column;
+  }
+
+
+  h2 {
+    font-size: 4.5rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  .flex-contain {
+    margin-left: 3rem;
+  }
+
+  .separator {
+   display: none;
+  }
+}
+
+/* MOBILE L */
+@media screen and (max-width: 30rem) {
+  section {
+    margin: 1rem 1rem 0 1rem;
+
+
+  }
+
+  h2 {
+
+    font-size: 3rem;
+    text-align: center;
+    width: 90vw;
+  }
+
+  .flex-contain {
+    margin-left: 10rem;
+    padding-top: 2rem;
+    gap: 2rem
+  }
 }
 
 </style>
