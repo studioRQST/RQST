@@ -241,6 +241,76 @@ li {
   line-height: 2rem;
 }
 
+/* Media queries voor verschillende schermformaten */
+
+/* LAPTOP */
+@media screen and (max-width: 80rem) {
+  h2 {
+    font-size: 6rem;
+  }
+
+  .arrow-component {
+    margin-top: 8rem;
+  }
+}
+
+/* TABLET */
+@media screen and (max-width: 60rem) {
+  section {
+    margin: 2rem 2rem 0 2rem;
+  }
+
+
+  h2 {
+    font-size: 5rem;
+  }
+
+  h3 {
+    font-size: 2.5rem;
+  }
+
+  .flex-terms-conditions {
+    margin-left: 3rem;
+  }
+
+  li {
+    font-size: 1.2rem;
+    width: 90%;
+  }
+}
+
+/* MOBILE L */
+@media screen and (max-width: 30rem) {
+  section {
+    margin: 1rem 1rem 0 1rem;
+  }
+
+  h2 {
+    font-size: 2.8rem;
+    width: 90vw;
+    line-height: 3.5rem;
+  }
+
+ h3 {
+   font-size: 1.1rem;
+   line-height: 2.1rem;
+ }
+
+  .flex-terms-conditions {
+    margin-left: 1.5rem;
+    margin-bottom: 0;
+  }
+
+ ul {
+    width: 95vw;
+ }
+
+ li {
+   font-size: 1rem;
+
+ }
+
+}
 
 
 </style>
