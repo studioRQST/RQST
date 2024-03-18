@@ -121,13 +121,19 @@
 
   /* MOBILE L */
   @media screen and (max-width: 30rem) {
+    section {
+      height: 110vh;
+    }
+
+
     a {
       font-size: 2rem;
     }
 
     .flex-container-text {
       padding: 0;
-      gap: 2rem
+      gap: 2rem;
+
     }
 
 
