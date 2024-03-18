@@ -10,7 +10,7 @@ export default {
       scrollTrigger: {
         trigger: '.flex-container-images',
         start: 'top 90%',
-        end: 'bottom 80%',
+        end: 'bottom 90%',
         scrub: true,
       },
       y: -100,
@@ -23,7 +23,7 @@ export default {
       scrollTrigger: {
         trigger: '.flex-container-images',
         start: 'top 90%',
-        end: 'bottom 80%',
+        end: 'bottom 90%',
         scrub: true,
       },
       y: -100,
@@ -37,7 +37,7 @@ export default {
       scrollTrigger: {
         trigger: '.flex-container-images',
         start: 'top 90%',
-        end: 'bottom 80%',
+        end: 'bottom 90%',
         scrub: true,
       },
       y: -100,
@@ -55,13 +55,13 @@ export default {
   <section>
     <div class="flex-container-images">
       <NuxtLink to="/cases" class="image-wrapper-1">
-        <img src="/static/img/img-case-1-example.png">
+        <img src="/static/img/annemou-mockup-devices.png">
       </NuxtLink>
       <NuxtLink to="/cases" class="image-wrapper-2">
-        <img src="/static/img/img-case-1-example.png">
+        <img src="/static/img/lux-mockup-devices.png">
       </NuxtLink>
       <NuxtLink to="/cases" class="image-wrapper-3">
-        <img src="/static/img/img-case-1-example.png">
+        <img src="/static/img/tjoektjoek-mockup-devices.png">
       </NuxtLink>
     </div>
 
@@ -140,16 +140,28 @@ span {
   margin-top: 10rem;
 }
 
+.image-wrapper-1 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.image-wrapper-2 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.image-wrapper-3 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 img:hover {
   transform: scale(1.3);
   transition: transform 0.3s ease;
   opacity: 0.8;
-}
-
-.img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
 }
 
 .flex-container-par {
@@ -188,7 +200,7 @@ img:hover {
   }
 
   .flex-container-images {
-    gap: 1rem;
+    gap: 2rem;
   }
 
   .flex-container-par {
@@ -204,7 +216,7 @@ img:hover {
 @media screen and (max-width: 40rem) {
 
   section{
-    margin: 1rem 1rem 0 1rem;
+    margin: 2rem 2rem 0 2rem;
     height: auto;
     padding-bottom: 11rem;
   }
@@ -216,11 +228,11 @@ img:hover {
 
   .flex-container-images {
     flex-direction: column;
-    margin: 10rem 0 5rem 0;
+    margin: 10rem 0 8rem 0;
   }
 
   .image-wrapper-1, .image-wrapper-2, .image-wrapper-3 {
-    width: 90%;
+    width: 100%;
     height: 20rem;
     margin-top: 0.5rem;
   }
@@ -247,12 +259,16 @@ img:hover {
 
 @media screen and (max-width: 30rem) {
 
+  section{
+    margin: 1rem 1rem 0 1rem;
+  }
+
   h3 {
     font-size: 7rem;
   }
 
   .flex-container-images {
-    gap: 0.5rem;
+    gap: 1rem;
   }
 }
 

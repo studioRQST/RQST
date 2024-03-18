@@ -2,17 +2,14 @@
   <section>
     <div class="flex-container-text">
       <div class="hover-background-1">
-        <a class="project-1 bold-weight" href=""><span>Project een</span></a>
+        <a class="project-1 bold-weight" href="/project-een"><span>Project een</span></a>
       </div>
       <div class="hover-background-2">
-        <a class="project-2 bold-weight" href=""><span>Project twee</span></a>
+        <a class="project-2 bold-weight" href="/project-een"><span>Project twee</span></a>
       </div>
         <div class="hover-background-3">
-        <a class="project-3 bold-weight" href=""><span>Project drie</span></a>
+        <a class="project-3 bold-weight" href="/project-een"><span>Project drie</span></a>
         </div>
-          <div class="hover-background-4">
-        <a class="project-4 bold-weight" href=""><span>Project vier</span></a>
-          </div>
     </div>
   </section>
 </template>
@@ -23,7 +20,7 @@
       margin: 2rem;
       padding: 3rem;
       border-radius: 15px;
-      height: 150vh;
+      height: 100vh;
   }
 
   .flex-container-text {
@@ -66,7 +63,7 @@
   }
 
   .project-1:hover:before {
-    content: "Coming soon";
+    content: "AnneMou";
     position: absolute;
     opacity: 1;
     transition: opacity 0.3s;
@@ -74,7 +71,7 @@
   }
 
   .project-2:hover:before{
-    content: "Coming soon";
+    content: "Lux Eventos";
     position: absolute;
     opacity: 1;
     transition: opacity 0.3s ease-in;
@@ -82,21 +79,12 @@
   }
 
   .project-3:hover:before{
-    content: "Coming soon";
+    content: "Tjoek Tjoek";
     position: absolute;
     opacity: 1;
     transition: opacity 0.3s ease-in;
     z-index: 1;
   }
-
-  .project-4:hover:before{
-    content: "Coming soon";
-    position: absolute;
-    opacity: 1;
-    transition: opacity 0.3s ease-in;
-    z-index: 1;
-  }
-
 
   /* Media queries voor verschillende schermformaten */
 

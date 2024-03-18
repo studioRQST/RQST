@@ -81,12 +81,7 @@ p span {
   }
 }
 
-/* TABLET */
 @media screen and (max-width: 60rem) {
-  section {
-    margin: 2rem 2rem 0 2rem;
-  }
-
 
   h2 {
     font-size: 5rem;

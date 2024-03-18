@@ -72,7 +72,7 @@ h1 {
 
 }
 
-@media screen and (max-width: 40rem) {
+@media screen and (max-width: 30rem) {
 
   section{
     margin: 1rem 1rem 0 1rem;
@@ -84,14 +84,6 @@ h1 {
 
   .h1-outline {
     -webkit-text-stroke: 2px var(--secundair-color-l-purple);
-  }
-
-}
-
-@media screen and (max-width: 30rem) {
-
-  h1 {
-    line-height: 1.5;
   }
 
 }

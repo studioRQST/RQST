@@ -187,7 +187,7 @@ export default {
   }
 
 
-  @media screen and (max-width: 40rem) {
+  @media screen and (max-width: 30rem) {
 
     .navigation{
       margin: 0 1rem;

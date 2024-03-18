@@ -86,7 +86,7 @@
     }
 
   /* Media query voor tablet */
-  @media screen and (max-width: 40rem) {
+  @media screen and (max-width: 30rem) {
 
       section {
         margin: 1rem 0.5rem 0 0;
