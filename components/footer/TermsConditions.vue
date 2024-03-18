@@ -281,6 +281,12 @@ li {
 
 /* MOBILE L */
 @media screen and (max-width: 30rem) {
+
+  .section-header {
+    margin: 1rem 1rem 0 1rem;
+    
+  }
+
   section {
     margin: 1rem 1rem 0 1rem;
   }
