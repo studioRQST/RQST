@@ -111,7 +111,7 @@
   @media screen and (max-width: 30rem) {
 
     a {
-      font-size: 2.5rem;
+      font-size: 2rem;
       border-bottom: solid 3px;
     }
 
