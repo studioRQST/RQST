@@ -55,13 +55,13 @@ export default {
   <section>
     <div class="flex-container-images">
       <NuxtLink to="/project-een" class="image-wrapper-1">
-        <img src="/static/img/annemou-mockup-devices.png">
+        <img src="/static/img/annemou-mockup-devices.png" alt="Afbeelding project een">
       </NuxtLink>
       <NuxtLink to="/project-twee" class="image-wrapper-2">
-        <img src="/static/img/lux-mockup-devices.png">
+        <img src="/static/img/lux-mockup-devices.png" alt="Afbeelding project twee">
       </NuxtLink>
       <NuxtLink to="/project-drie" class="image-wrapper-3">
-        <img src="/static/img/tjoektjoek-mockup-devices.png">
+        <img src="/static/img/tjoektjoek-mockup-devices.png" alt="Afbeelding project drie">
       </NuxtLink>
     </div>
 
@@ -163,6 +163,13 @@ img:hover {
   transition: transform 0.3s ease;
   opacity: 0.8;
 }
+
+.image-wrapper-1:focus,
+.image-wrapper-2:focus,
+.image-wrapper-3:focus {
+  outline: 5px solid var(--primair-color-l-blue);
+}
+
 
 .flex-container-par {
   position: absolute;

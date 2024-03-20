@@ -1,6 +1,5 @@
 <template>
   <section>
-
     <div class="flex-container-text">
       <p class="title-uppercase">Maak kennis met ons</p>
       <h2>Ontmoet <span>Request</span></h2>
@@ -9,7 +8,6 @@
         <ScrollDown/>
       </div>
     </div>
-
   </section>
 </template>
 

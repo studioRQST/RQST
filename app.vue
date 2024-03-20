@@ -1,25 +1,26 @@
 <template>
-  <link rel="stylesheet" href="https://use.typekit.net/eyu4tao.css">
   <div>
-      <NuxtLayout>
-        <NuxtLink to="home-page" />
-      </NuxtLayout>
-    <NuxtPage/>
+    <link rel="stylesheet" href="https://use.typekit.net/eyu4tao.css">
+    <NuxtLayout>
+      <NuxtPage/>
+    </NuxtLayout>
   </div>
 </template>
 
 <style>
 .page-enter-active,
 .page-leave-active {
-  transition: all 0.4s;
+  transition: transform 0.4s ease-in-out;
 }
-.page-enter-from,
+
+.page-enter-from {
+  transform: translateX(100%);
+}
+
 .page-leave-to {
-  opacity: 0;
-  filter: blur(1rem);
+  transform: translateX(-100%);
 }
 </style>
-
 
 <script setup lang="ts">
 </script>

@@ -3,7 +3,6 @@
 </script>
 
 <template>
-  <link rel="stylesheet" href="https://use.typekit.net/eyu4tao.css">
   <section>
     <h1 class="h1-outline bold-weight">JUST</h1>
     <h1 class="h1-request bold-weight">REQUEST</h1>

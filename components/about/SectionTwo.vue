@@ -1,8 +1,3 @@
-<script>
-
-
-</script>
-
 <template>
   <section>
     <div class="flex-container">
@@ -27,9 +22,10 @@
         </p>
       </div>
     </div>
-    <img src="/static/img/over-ons-image.png" alt="Over ons afbeelding">
+    <img src="/static/img/over-ons-image.png" alt="Over ons afbeelding" aria-label="Over ons afbeelding">
   </section>
 </template>
+
 
 <style scoped>
 

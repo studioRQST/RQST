@@ -2,50 +2,42 @@
   <form action="https://api.web3forms.com/submit" method="POST">
     <input type="hidden" name="access_key" value="344c1a49-5984-48fa-9681-609c3baeb98c">
     <input type="hidden" name="redirect" value="https://web3forms.com/success">
-      <div class="flex-container-contact-form">
-        <div class="flex-1">
-          <div class="width">
-            <label class="title-uppercase bold-weight" for="naam">Naam</label>
-            <input type="text" id="naam" name="naam" placeholder="Jouw naam..." required>
-          </div>
-          <div class="width">
-            <label class="title-uppercase bold-weight" for="bedrijf">Bedrijfsnaam</label>
-            <input type="text" id="bedrijf" name="bedrijf" placeholder="Jouw bedrijfsnaam...">
-          </div>
+    <div class="flex-container-contact-form">
+      <div class="flex-1">
+        <div class="width">
+          <label class="title-uppercase bold-weight" for="naam">Naam</label>
+          <input type="text" id="naam" name="naam" placeholder="Jouw naam..." required aria-label="Naam">
         </div>
-
-        <div class="flex-2">
-          <div class="width">
-            <label class="title-uppercase bold-weight" for="email">E-mail</label>
-            <input type="email" id="email" name="email" placeholder="Jouw e-mailadres..." required>
-          </div>
-          <div class="width">
-            <label class="title-uppercase bold-weight" for="telefoonnummer">Telefoonnummer</label>
-            <input type="tel" id="telefoonnummer" name="telefoonnummer" placeholder="Jouw telefoonnummer...">
-          </div>
+        <div class="width">
+          <label class="title-uppercase bold-weight" for="bedrijf">Bedrijfsnaam</label>
+          <input type="text" id="bedrijf" name="bedrijf" placeholder="Jouw bedrijfsnaam..." aria-label="Bedrijfsnaam">
         </div>
-
-        <div>
-          <label class="title-uppercase bold-weight" for="bericht">Jouw Request</label>
-          <textarea id="bericht" name="bericht" rows="10" cols="100" placeholder="Typ hier jouw request..." required></textarea>
-        </div>
-
-        <!-- hCaptcha Spam Protection -->
-        <div class="h-captcha" data-captcha="true"></div>
-        <button class="primary-button bold-weight" type="submit">Request Verzenden</button>
       </div>
+
+      <div class="flex-2">
+        <div class="width">
+          <label class="title-uppercase bold-weight" for="email">E-mail</label>
+          <input type="email" id="email" name="email" placeholder="Jouw e-mailadres..." required aria-label="E-mailadres">
+        </div>
+        <div class="width">
+          <label class="title-uppercase bold-weight" for="telefoonnummer">Telefoonnummer</label>
+          <input type="tel" id="telefoonnummer" name="telefoonnummer" placeholder="Jouw telefoonnummer..." aria-label="Telefoonnummer">
+        </div>
+      </div>
+
+      <div>
+        <label class="title-uppercase bold-weight" for="bericht">Jouw Request</label>
+        <textarea id="bericht" name="bericht" rows="10" cols="100" placeholder="Typ hier jouw request..." required aria-label="Bericht"></textarea>
+      </div>
+
+      <!-- hCaptcha Spam Protection -->
+      <div class="h-captcha" data-captcha="true" aria-label="Captcha Spam Bescherming"></div>
+      <button class="primary-button bold-weight" type="submit">Request Verzenden</button>
+    </div>
   </form>
 </template>
 
 <style scoped>
-
-    :root {
-        --background-dark-purple: #45227A;
-        --second-background: #7952B3;
-        --primair-color-l-blue: #BEFBFF;
-        --secundair-color-l-purple: #F6EFFF;
-        --teriary-color-yellow: #F6FFBE;
-    }
 
     form {
       display: flex;

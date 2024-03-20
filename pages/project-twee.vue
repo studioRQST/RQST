@@ -1,5 +1,7 @@
 <template>
-  <NavbarNavBar/>
-  <ProjectsProjectTwoPage></ProjectsProjectTwoPage>
-  <Footer></Footer>
+  <div>
+    <NavbarNavBar/>
+    <ProjectsProjectTwoPage></ProjectsProjectTwoPage>
+    <Footer></Footer>
+  </div>
 </template>

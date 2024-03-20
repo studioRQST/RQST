@@ -1,18 +1,19 @@
 <template>
   <section>
     <div class="flex-container-text">
-      <div class="hover-background-1">
+      <div class="hover-background-1" role="link">
         <a class="project-1 bold-weight" href="/project-een"><span>Project een</span></a>
       </div>
-      <div class="hover-background-2">
+      <div class="hover-background-2" role="link">
         <a class="project-2 bold-weight" href="/project-twee"><span>Project twee</span></a>
       </div>
-        <div class="hover-background-3">
+      <div class="hover-background-3" role="link">
         <a class="project-3 bold-weight" href="/project-drie"><span>Project drie</span></a>
-        </div>
+      </div>
     </div>
   </section>
 </template>
+
 
 <style scoped>
 

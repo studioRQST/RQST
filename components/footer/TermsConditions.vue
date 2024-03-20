@@ -216,8 +216,8 @@ p {
 .flex-terms-conditions {
   display: flex;
   flex-direction: column;
-  justify-content: start;
-  align-items: start;
+  justify-content: flex-start;
+  align-items: flex-start;
   margin: 10rem 8rem 10rem 8rem;
 }
 

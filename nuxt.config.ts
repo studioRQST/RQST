@@ -15,6 +15,10 @@ export default defineNuxtConfig({
 
   css: ['assets/main.css'],
 
+  app: {
+    pageTransition: { name: 'page', mode: 'out-in' }
+  },
+
   modules: ["nuxt-marquee", "nuxt-aos"],
 
   plugins: [],
