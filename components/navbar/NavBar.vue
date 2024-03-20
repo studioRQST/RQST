@@ -186,6 +186,24 @@ export default {
     transform-origin: bottom left;
   }
 
+  @media screen and (max-width: 60rem) {
+
+    .navigation{
+      margin: 0 1rem;
+    }
+
+    p, a{
+      font-size: 2rem;
+      line-height: 3rem;
+    }
+
+    .title-uppercase{
+      font-size: 4rem;
+      line-height: 6rem;
+    }
+
+  }
+
 
   @media screen and (max-width: 30rem) {
 
@@ -204,6 +222,10 @@ export default {
     }
 
     .icon-social-container {
+      position: absolute;
+      left: 50%;
+      right: 7rem;
+      transform: translateX(-50%);
       bottom: 5rem;
     }
 }
