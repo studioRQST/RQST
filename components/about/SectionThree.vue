@@ -124,6 +124,9 @@ p {
 
   h2 {
     font-size: 4.5rem;
+    line-height: 5rem;
+    text-align: center;
+    margin-top: 5rem;
   }
 
   p {
@@ -143,15 +146,14 @@ p {
 @media screen and (max-width: 30rem) {
   section {
     margin: 1rem 1rem 0 1rem;
-
-
   }
 
   h2 {
-
     font-size: 3rem;
+    line-height: 3.5rem;
     text-align: center;
     width: 90vw;
+    margin-bottom: 3rem;
   }
 
   .flex-contain {
