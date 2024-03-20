@@ -226,7 +226,7 @@ export default {
       left: 50%;
       right: 7rem;
       transform: translateX(-50%);
-      bottom: 5rem;
+      bottom: 6rem;
     }
 }
 
