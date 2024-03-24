@@ -1,9 +1,3 @@
-<template>
-  <div class="page-loader">
-    <img src="/static/img/LogoRqst.svg" alt="Logo STudio RQST" class="logo" />
-  </div>
-</template>
-
 <script>
 import { gsap } from 'gsap';
 
@@ -24,6 +18,12 @@ export default {
   },
 };
 </script>
+
+<template>
+  <div class="page-loader">
+    <img src="/static/img/LogoRqst.svg" alt="Logo STudio RQST" class="logo" />
+  </div>
+</template>
 
 <style scoped>
 

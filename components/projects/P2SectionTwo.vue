@@ -1,3 +1,6 @@
+<script setup lang="ts">
+</script>
+
 <template>
   <section class="wrapper">
     <img src="/static/img/lux-impressie-1.png" alt="Lux Eventos Logo">

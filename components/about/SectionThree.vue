@@ -1,3 +1,6 @@
+<script setup lang="ts">
+</script>
+
 <template>
   <section>
     <div>
@@ -164,5 +167,3 @@ p {
 }
 
 </style>
-<script setup lang="ts">
-</script>

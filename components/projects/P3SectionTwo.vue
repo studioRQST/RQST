@@ -1,3 +1,6 @@
+<script setup lang="ts">
+</script>
+
 <template>
   <section class="wrapper">
     <img src="/static/img/tjoektjoek-impressie-1.png" alt="TjoekTjoek Brand Identity">

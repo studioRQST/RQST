@@ -1,3 +1,6 @@
+<script setup lang="ts">
+</script>
+
 <template>
   <form action="https://api.web3forms.com/submit" method="POST">
     <input type="hidden" name="access_key" value="344c1a49-5984-48fa-9681-609c3baeb98c">

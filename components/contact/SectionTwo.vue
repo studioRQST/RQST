@@ -1,3 +1,6 @@
+<script setup lang="ts">
+</script>
+
 <template>
   <section>
       <div class="flex-container-text">

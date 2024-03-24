@@ -1,3 +1,27 @@
+<script>
+export default {
+  data() {
+    return {
+      showNav: false
+    }
+  },
+  methods: {
+    toggleNav() {
+      this.showNav = !this.showNav;
+      this.toggleBodyScrollLock();
+    },
+    toggleBodyScrollLock() {
+      const body = document.querySelector('body');
+      body.style.overflow = this.showNav ? 'hidden' : 'auto';
+    },
+    closeNav() {
+      this.showNav = false;
+      this.toggleBodyScrollLock();
+    }
+  }
+}
+</script>
+
 <template>
   <header class="navigation">
     <div class="logo">
@@ -41,29 +65,6 @@
   </header>
 </template>
 
-<script>
-export default {
-  data() {
-    return {
-      showNav: false
-    }
-  },
-  methods: {
-    toggleNav() {
-      this.showNav = !this.showNav;
-      this.toggleBodyScrollLock();
-    },
-    toggleBodyScrollLock() {
-      const body = document.querySelector('body');
-      body.style.overflow = this.showNav ? 'hidden' : 'auto';
-    },
-    closeNav() {
-      this.showNav = false;
-      this.toggleBodyScrollLock();
-    }
-  }
-}
-</script>
 
 <style scoped>
 
