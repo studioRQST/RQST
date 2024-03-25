@@ -1,3 +1,6 @@
+<script setup lang="ts">
+</script>
+
 <template>
   <section>
     <div class="flex-container-text">
@@ -31,6 +34,7 @@
     align-items: center;
     gap: 5rem;
     padding: 5rem 0;
+
   }
 
   a{
@@ -44,7 +48,6 @@
 
   [class^="hover-background"] {
     padding: 2rem 0 0 0;
-    text-align: center;
   }
 
   [class^="hover-background"]:hover {
@@ -52,15 +55,20 @@
     width: 100vw;
     text-align: center;
     transition: ease-in 0.3s;
+
   }
 
   [class^="hover-background"]:hover a {
     color: var(--second-background);
     transition: ease-in 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   [class^="hover-background"]:hover span {
     opacity: 0;
+
   }
 
   .project-1:hover:before {
@@ -69,10 +77,11 @@
     opacity: 1;
     transition: opacity 0.3s;
     z-index: 1;
+
   }
 
   .project-2:hover:before{
-    content: "Lux Eventos";
+    content: "Lux-Eventos";
     position: absolute;
     opacity: 1;
     transition: opacity 0.3s ease-in;

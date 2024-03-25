@@ -1,3 +1,6 @@
+<script setup lang="ts">
+</script>
+
 <template>
   <section>
     <div class="container-left">
@@ -16,7 +19,7 @@
       </div>
     </div>
     <div class="image_wrapper">
-      <img src="/static/img/lux-mockup-devices.png" alt="Impressie Website Lux Eventos">
+      <img src="/static/img/lux-mockup-devices.avif" alt="Impressie Website Lux Eventos">
       <div class="overlay overlay_0"></div>
     </div>
   </section>

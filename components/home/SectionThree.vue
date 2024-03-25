@@ -55,13 +55,15 @@ export default {
   <section>
     <div class="flex-container-images">
       <NuxtLink to="/project-een" class="image-wrapper-1">
-        <img src="/static/img/annemou-mockup-devices.png" alt="Afbeelding project een">
+        <img src="/static/img/annemou-mockup-devices.avif" alt="Afbeelding project een">
       </NuxtLink>
+
+
       <NuxtLink to="/project-twee" class="image-wrapper-2">
-        <img src="/static/img/lux-mockup-devices.png" alt="Afbeelding project twee">
+        <img src="/static/img/lux-mockup-devices.avif" alt="Afbeelding project twee">
       </NuxtLink>
       <NuxtLink to="/project-drie" class="image-wrapper-3">
-        <img src="/static/img/tjoektjoek-mockup-devices.png" alt="Afbeelding project drie">
+        <img src="/static/img/tjoektjoek-mockup-devices.avif" alt="Afbeelding project drie">
       </NuxtLink>
     </div>
 
