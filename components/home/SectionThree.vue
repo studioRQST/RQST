@@ -51,7 +51,13 @@ export default {
 </script>
 
 <template>
+
+
   <section>
+    <div class="flex-container-h3">
+      <h3 class="bold-weight">Cases</h3>
+    </div>
+
     <div class="flex-container-images">
       <NuxtLink to="/project-een" class="image-wrapper-1">
         <img src="/static/img/annemou-mockup-devices.avif" alt="Afbeelding project een" width="100%" height="100%" />
@@ -64,10 +70,6 @@ export default {
       <NuxtLink to="/project-drie" class="image-wrapper-3">
         <img src="/static/img/tjoektjoek-mockup-devices.avif" alt="Afbeelding project drie" width="100%" height="100%" />
       </NuxtLink>
-    </div>
-
-    <div class="flex-container-h3">
-      <h3 class="bold-weight">Cases</h3>
     </div>
 
     <div class="flex-container-par">
@@ -102,6 +104,7 @@ h3 {
   color: var(--background-dark-purple);
   -webkit-text-stroke: 5px var(--teriary-color-yellow);
   text-transform: uppercase;
+  z-index: 1;
 }
 
 p {
@@ -272,11 +275,16 @@ img:hover {
   }
 
   h3 {
-    font-size: 7rem;
+    position: absolute;
+    font-size: 5rem;
+    color: var(--teriary-color-yellow);
+    -webkit-text-stroke: 0;
+    top: 8%;
   }
 
   .flex-container-images {
     gap: 1rem;
+    margin-top: 15rem;
   }
 }
 
