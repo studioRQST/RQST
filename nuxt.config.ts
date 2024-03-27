@@ -17,6 +17,6 @@ export default defineNuxtConfig({
     },
     pageTransition: { name: 'page', mode: 'out-in' }
   },
-  modules: ["nuxt-marquee", "nuxt-aos", "@nuxt/image"],
+  modules: ["nuxt-marquee", "nuxt-aos", "@nuxt/image", 'nuxt-gtag'],
   plugins: [],
 });

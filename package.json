@@ -20,6 +20,7 @@
   },
   "devDependencies": {
     "nuxt-aos": "^1.2.4",
+    "nuxt-gtag": "^2.0.5",
     "nuxt-marquee": "^1.0.3"
   }
 }
