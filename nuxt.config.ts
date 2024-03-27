@@ -21,7 +21,7 @@ export default defineNuxtConfig({
     "nuxt-marquee",
     "nuxt-aos",
     "@nuxt/image",
-    ['nuxt-gtag', { id: 'G-T5NXWRRBMD' }] // Add gtag configuration here
+    ['nuxt-gtag', { id: 'G-B84WBEN7E5' }] // Add gtag configuration here
   ],
 
   plugins: [],
