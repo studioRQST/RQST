@@ -18,20 +18,25 @@
       <div class="flex-footer">
         <div class="flex-text">
         <ul>
-          <li><p class="bold-weight">Copyright © 2024 Studio RQST</p></li>
+          <li class="bold-weight">Copyright © 2024 Studio RQST</li>
           <nuxt-link to="terms-conditions">
-            <li><a class="bold-weight" href="">Algemene voorwaarden</a></li>
+            <li class="bold-weight">Algemene voorwaarden</li>
           </nuxt-link>
         </ul>
         </div>
+
           <div class="flex-socials">
             <ul>
-            <li><a href="https://www.instagram.com/studio.rqst/">
+
+              <a href="https://www.instagram.com/studio.rqst/">
+            <li>
               <img src="/static/img/InstagramIcon.svg" alt="Instagram Link">
-            </a></li>
-            <li><a href="mailto:info@rqst.studio">
+            </li></a>
+
+              <a href="mailto:info@rqst.studio">
+            <li>
               <img src="/static/img/MailIcon.svg" alt="Email Link">
-            </a></li>
+            </li></a>
             </ul>
           </div>
       </div>
@@ -91,6 +96,8 @@ span {
 .flex-text ul {
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  align-items: center;
   gap: 2rem;
 }
 
@@ -107,10 +114,6 @@ ul {
 li {
   color: var(--background-dark-purple);
   font-variation-settings: "wdth" 100, "wght" 700;
-}
-
-p {
-  font-size: 1rem;
 }
 
 img:hover {
@@ -198,6 +201,8 @@ a:focus {
 
   .flex-text ul {
     display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
     flex-direction: column;
     gap: 0.5rem;
     margin-bottom: 1rem;
