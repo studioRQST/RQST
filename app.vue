@@ -1,4 +1,4 @@
-<link rel="icon" href="/public/favicon.ico">
+
 
 <template>
   <div>

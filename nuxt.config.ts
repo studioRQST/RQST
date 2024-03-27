@@ -14,6 +14,9 @@ export default defineNuxtConfig({
       htmlAttrs: {
         lang: 'nl',
       },
+      link: [
+        { rel: 'icon', type: 'image/x-icon', href: '/public/favicon.ico' } 
+      ]
     },
     pageTransition: { name: 'page', mode: 'out-in' }
   },
@@ -23,6 +26,5 @@ export default defineNuxtConfig({
     "@nuxt/image",
     ['nuxt-gtag', { id: 'G-B84WBEN7E5' }] // Add gtag configuration here
   ],
-
   plugins: [],
 });
