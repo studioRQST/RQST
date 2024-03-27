@@ -17,28 +17,27 @@
     <section class="links-contain">
       <div class="flex-footer">
         <div class="flex-text">
-        <ul>
-          <li class="bold-weight">Copyright © 2024 Studio RQST</li>
-          <nuxt-link to="terms-conditions">
-            <li class="bold-weight">Algemene voorwaarden</li>
-          </nuxt-link>
-        </ul>
+          <ul>
+            <li class="bold-weight">Copyright © 2024 Studio RQST</li>
+            <nuxt-link to="terms-conditions">
+              <li class="bold-weight">Algemene voorwaarden</li>
+            </nuxt-link>
+          </ul>
         </div>
 
-          <div class="flex-socials">
-            <ul>
-
+        <div class="flex-socials">
+          <ul>
+            <li>
               <a href="https://www.instagram.com/studio.rqst/">
-            <li>
-              <img src="/static/img/InstagramIcon.svg" alt="Instagram Link">
-            </li></a>
+                <img src="/static/img/InstagramIcon.svg" alt="Instagram Link">
+              </a></li>
 
-              <a href="mailto:info@rqst.studio">
             <li>
-              <img src="/static/img/MailIcon.svg" alt="Email Link">
-            </li></a>
-            </ul>
-          </div>
+              <a href="mailto:info@rqst.studio">
+                <img src="/static/img/MailIcon.svg" alt="Email Link">
+              </a></li>
+          </ul>
+        </div>
       </div>
     </section>
   </footer>
