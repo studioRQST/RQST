@@ -126,6 +126,7 @@ span {
   justify-content: center;
   align-items: center;
   gap: 2rem;
+
 }
 
 .image-wrapper-1, .image-wrapper-2, .image-wrapper-3 {
@@ -134,6 +135,7 @@ span {
   position: relative;
   border-radius: 15px;
   overflow: hidden;
+
 }
 
 .image-wrapper-1 {
@@ -142,29 +144,22 @@ span {
 
 .image-wrapper-3 {
   margin-top: 10rem;
+
 }
 
-.image-wrapper-1 img {
+.image-wrapper img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-.image-wrapper-2 img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.image-wrapper-3 img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+img {
+  transition: transform 0.3s ease-out;
 }
 
 img:hover {
   transform: scale(1.3);
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease-in;
   opacity: 0.8;
 }
 
