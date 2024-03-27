@@ -7,16 +7,16 @@ import { TextPlugin } from "gsap/TextPlugin";
 gsap.registerPlugin(Flip, ScrollTrigger, ScrollToPlugin, TextPlugin);
 
 export default defineNuxtConfig({
-  head: {
-    htmlAttrs: {
-      lang: 'nl'
-    }
-  },
   devtools: { enabled: true },
   css: ['assets/main.css'],
   app: {
+    head: {
+      htmlAttrs: {
+        lang: 'en',
+      },
+    },
     pageTransition: { name: 'page', mode: 'out-in' }
   },
-  modules: ["nuxt-marquee", "nuxt-aos"],
+  modules: ["nuxt-marquee", "nuxt-aos", "@nuxt/image"],
   plugins: [],
 });
