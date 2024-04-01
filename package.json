@@ -19,6 +19,7 @@
     "vue-router": "^4.2.5"
   },
   "devDependencies": {
+    "@nuxtjs/sitemap": "^5.1.2",
     "nuxt-aos": "^1.2.4",
     "nuxt-gtag": "^2.0.5",
     "nuxt-marquee": "^1.0.3"

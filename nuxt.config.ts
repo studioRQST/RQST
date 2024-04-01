@@ -24,7 +24,8 @@ export default defineNuxtConfig({
     "nuxt-marquee",
     "nuxt-aos",
     "@nuxt/image",
-    ['nuxt-gtag', { id: 'G-B84WBEN7E5' }] // Add gtag configuration here
+    ['nuxt-gtag', { id: 'G-B84WBEN7E5' }], // Add gtag configuration here
+    '@nuxtjs/sitemap' // Add the sitemap module here
   ],
   plugins: [],
 });
