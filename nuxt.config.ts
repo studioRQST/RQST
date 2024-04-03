@@ -25,7 +25,8 @@ export default defineNuxtConfig({
     "nuxt-aos",
     "@nuxt/image",
     ['nuxt-gtag', { id: 'G-B84WBEN7E5' }], // Add gtag configuration here
-    '@nuxtjs/sitemap' // Add the sitemap module here
+    '@nuxtjs/sitemap',
+    'nuxt-jsonld'// Add the sitemap module here
   ],
   plugins: [],
 });
