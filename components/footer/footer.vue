@@ -26,6 +26,11 @@
         <div class="flex-socials">
           <ul>
             <li>
+              <a href="https://www.linkedin.com/company/studio-rqst">
+                <img src="/static/img/LinkdinIcon.svg" alt="Linkdin Link">
+              </a>
+            </li>
+            <li>
               <a href="https://www.instagram.com/studio.rqst/">
                 <img src="/static/img/InstagramIcon.svg" alt="Instagram Link">
               </a>

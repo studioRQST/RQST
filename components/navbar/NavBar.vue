@@ -53,6 +53,9 @@ export default {
             </li>
           </ul>
           <div class="icon-social-container">
+            <a class="focus-underline-animation" href="https://www.linkedin.com/company/studio-rqst">
+              <img src="/static/img/LinkdinIconYellow.svg" alt="Linkdin Link">
+            </a>
             <a class="focus-underline-animation" href="https://www.instagram.com/studio.rqst/">
               <img src="/static/img/InstagramIconYellow.svg" alt="Instagram Link">
             </a>
