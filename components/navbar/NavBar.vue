@@ -243,6 +243,7 @@ export default {
       align-items: center;
       left: 0;
       right: 0;
+      margin-bottom: 2rem;
     }
 
     .icon-social-container div {
