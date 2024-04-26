@@ -35,6 +35,7 @@ export default defineNuxtConfig({
       '/project-twee',
       '/project-drie',
       '/404',
+      '/succes-page-form',
     ],
   },
   plugins: [],
