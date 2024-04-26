@@ -34,6 +34,7 @@ export default defineNuxtConfig({
       '/project-een',
       '/project-twee',
       '/project-drie',
+      '/404',
     ],
   },
   plugins: [],
