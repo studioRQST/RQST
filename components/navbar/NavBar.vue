@@ -57,6 +57,7 @@ export default {
             </li>
           </ul>
           <div class="icon-social-container">
+            <div>
             <a class="focus-underline-animation" href="https://www.linkedin.com/company/studio-rqst">
               <img src="/static/img/LinkdinIconYellow.svg" alt="Linkdin Link">
             </a>
@@ -66,6 +67,7 @@ export default {
             <a class="focus-underline-animation" href="mailto:info@rqst.studio">
               <img src="/static/img/MailIconYellow.svg" alt="Email Link">
             </a>
+            </div>
           </div>
         </div>
       </div>
@@ -210,6 +212,11 @@ export default {
       line-height: 6rem;
     }
 
+    .icon-social-container {
+      position: absolute;
+
+    }
+
   }
 
 
@@ -231,10 +238,21 @@ export default {
 
     .icon-social-container {
       position: absolute;
-      left: 50%;
-      right: 7rem;
-      transform: translateX(-50%);
-      bottom: 6rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      left: 0;
+      right: 0;
+    }
+
+    .icon-social-container div {
+      display: flex;
+      gap: 1rem;
+    }
+
+
+    .icon-social-container img {
+      width: 1.5rem;
     }
 }
 
