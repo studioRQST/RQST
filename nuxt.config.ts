@@ -28,5 +28,13 @@ export default defineNuxtConfig({
     '@nuxtjs/sitemap',
     'nuxt-jsonld'// Add the sitemap module here
   ],
+  sitemap: {
+    // Specify routes you want to exclude
+    exclude: [
+      '/project-een',
+      '/project-twee',
+      '/project-drie',
+    ],
+  },
   plugins: [],
 });

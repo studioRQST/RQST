@@ -29,16 +29,20 @@ export default {
         <img src="/static/img/LogoRqst.svg" alt="Logo">
       </a>
     </div>
+
     <div class="menu-icon" @click="toggleNav" v-show="!showNav">
       <img src="/static/img/HamburgerIcon.svg" alt="Open Menu">
     </div>
+
     <div class="menu-icon" @click="toggleNav" v-show="showNav">
       <img src="/static/img/CloseIcon.svg" alt="Close Menu">
     </div>
+
       <div class="nav-wrapper" v-if="showNav">
         <div class="close-icon" @click="toggleNav">
           <img src="/static/img/CloseIcon.svg" alt="Close Menu">
         </div>
+
         <div class="list-items-nav">
           <p class="bold-weight">menu</p>
           <ul class="nav-links">
