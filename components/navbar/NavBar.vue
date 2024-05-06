@@ -1,4 +1,8 @@
 <script>
+
+
+
+
 export default {
   data() {
     return {
@@ -6,6 +10,7 @@ export default {
     }
   },
   methods: {
+
     toggleNav() {
       this.showNav = !this.showNav;
       this.toggleBodyScrollLock();
@@ -29,6 +34,8 @@ export default {
         <img src="/static/img/LogoRqst.svg" alt="Logo">
       </a>
     </div>
+
+
 
     <div class="menu-icon" @click="toggleNav" v-show="!showNav">
       <img src="/static/img/HamburgerIcon.svg" alt="Open Menu">

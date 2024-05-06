@@ -14,8 +14,8 @@
       <div class="flex-wrapper-2">
         <h1 class="title-uppercase">Contact</h1>
         <p>Mail: info@rqst.studio</p>
-        <p>KVK:</p>
-        <p>BTW:</p>
+        <p>KVK: 93413386</p>
+        <p>BTW: NL866386889B01</p>
       </div>
 
       <div class="flex-wrapper-3">
@@ -133,8 +133,8 @@ h1 {
 @media screen and (max-width: 30rem) {
 
   section {
-    margin: 1rem 1rem 1.5rem 1rem;
-    height: 85vh;
+    margin: 1rem 1rem 22rem 1rem;
+    height: auto;
   }
 
  .flex-container {
@@ -143,13 +143,13 @@ h1 {
 
  .flex-wrapper {
    outline: 3px solid var(--teriary-color-yellow);
-   padding: 3rem 0 3rem 1rem;
+   padding: 3rem 3rem 3rem 1rem;
  }
 
   .flex-wrapper-2, .flex-wrapper-3 {
-    width: 90vw;
+    width: auto;
     outline: 3px solid var(--teriary-color-yellow);
-    padding: 2rem 0 2rem 1rem;
+    padding: 2rem 0 3rem 1rem;
   }
 
   .flex-wrapper-3 {
