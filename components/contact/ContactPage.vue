@@ -1,4 +1,9 @@
+<script setup lang="ts">
+</script>
+
 <template>
- <ContactSectionOne />
- <ContactSectionTwo />
+  <ContactSectionOne/>
+  <ContactSectionTwo/>
+  <ContactSectionThree/>
 </template>
+

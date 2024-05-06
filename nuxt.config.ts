@@ -20,14 +20,9 @@ export default defineNuxtConfig({
     },
     pageTransition: { name: 'page', mode: 'out-in' }
   },
-  modules: [
-    "nuxt-marquee",
-    "nuxt-aos",
-    "@nuxt/image",
-    ['nuxt-gtag', { id: 'G-B84WBEN7E5' }], // Add gtag configuration here
-    '@nuxtjs/sitemap',
-    'nuxt-jsonld'// Add the sitemap module here
-  ],
+  modules: ["nuxt-marquee", "nuxt-aos", "@nuxt/image", // Add gtag configuration here
+  ['nuxt-gtag', { id: 'G-B84WBEN7E5' }], '@nuxtjs/sitemap', // Add the sitemap module here
+  'nuxt-jsonld', "@nuxtjs/i18n"],
   sitemap: {
     // Specify routes you want to exclude
     exclude: [
