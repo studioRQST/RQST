@@ -133,7 +133,7 @@ h1 {
 @media screen and (max-width: 30rem) {
 
   section {
-    margin: 1rem 1rem 22rem 1rem;
+    margin: 1rem 1rem 20rem 1rem;
     height: auto;
   }
 
