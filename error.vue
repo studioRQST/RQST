@@ -13,6 +13,8 @@ const handleError4 = () => clearError({redirect: '/contact'})
 </script>
 
 <template>
+  <link rel="stylesheet" href="https://use.typekit.net/eyu4tao.css">
+
   <section>
     <div class="flex-container-text">
       <p class="p-yellow">Oops...</p>

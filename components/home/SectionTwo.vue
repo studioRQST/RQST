@@ -3,11 +3,16 @@
 
 <template>
   <section>
+
+
     <div class="flex-container">
     <div class="flex-container-text">
-      <p class="title-uppercase">Ontdek onze passie</p>
+      <p class="title-uppercase"> {{ $t("ontdek onze passie") }}</p>
       <h2>WELKOM BIJ<span class="new-line"><span class="span-color">R</span>E<span class="span-color">Q</span>UE<span
-          class="span-color">ST</span></span></h2>
+          class="span-color">ST</span></span> </h2>
+
+
+
       <p>Bij Studio RQST vervullen we niet alleen jouw wensen,<span> maar zetten we ook jouw RQST om in een creatieve realiteit.</span></p>
 
 

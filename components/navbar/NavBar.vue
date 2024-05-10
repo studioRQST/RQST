@@ -35,6 +35,10 @@ export default {
       </a>
     </div>
 
+    <div>
+<!--    <LanguageSwitch/>-->
+    </div>
+
 
 
     <div class="menu-icon" @click="toggleNav" v-show="!showNav">
