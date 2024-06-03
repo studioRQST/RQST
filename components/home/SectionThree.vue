@@ -73,7 +73,7 @@ export default {
     </div>
 
     <div class="flex-container-par">
-      <p class="title-uppercase">Ontdek<span> ons werk</span></p>
+<!--      <p class="title-uppercase">Ontdek<span> ons werk</span></p>-->
       <NuxtLink href="/cases">
         <button class="primary-button bold-weight">Bekijk meer cases</button>
       </NuxtLink>
@@ -121,6 +121,8 @@ span {
 
 .flex-container-images {
   width: 100%;
+  position: absolute;
+  top: -1.5rem;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -175,7 +177,7 @@ img:hover {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  bottom: -15vh;
+  bottom: 10vh;
   left: 5%;
 }
 
@@ -199,10 +201,14 @@ img:hover {
 }
 
 @media screen and (max-width: 60rem) {
-
   h3 {
     font-size: 11rem;
     -webkit-text-stroke: 4px var(--teriary-color-yellow);
+  }
+
+  img {
+    height: 50%;
+    border-radius: 0 0 10px 10px;
   }
 
   .flex-container-images {
@@ -211,6 +217,7 @@ img:hover {
 
   .flex-container-par {
     margin-left: 3rem;
+    bottom: 8rem;
   }
 
   .title-uppercase{
@@ -223,12 +230,11 @@ img:hover {
 
   section{
     margin: 2rem 2rem 0 2rem;
-    height: auto;
-    padding-bottom: 11rem;
   }
 
   h3 {
     font-size: 8rem;
+    margin-top: 2rem;
     -webkit-text-stroke: 2px var(--teriary-color-yellow);
   }
 
@@ -249,13 +255,13 @@ img:hover {
   }
 
   .flex-container-par {
-    bottom: 2vh;
+    bottom: 10vh;
     margin: 0;
     padding: 0;
     left: 50%;
     transform: translateX(-50%);
     text-align: center;
-    margin-bottom: 2.5rem;
+   
   }
 
   .title-uppercase span{
@@ -267,6 +273,7 @@ img:hover {
 
   section{
     margin: 1rem 1rem 0 1rem;
+
   }
 
   h3 {
@@ -280,6 +287,10 @@ img:hover {
   .flex-container-images {
     gap: 1rem;
     margin-top: 15rem;
+  }
+
+  .flex-container-par {
+    bottom: -110vh;
   }
 }
 
