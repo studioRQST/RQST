@@ -261,7 +261,7 @@ img:hover {
     left: 50%;
     transform: translateX(-50%);
     text-align: center;
-   
+
   }
 
   .title-uppercase span{
