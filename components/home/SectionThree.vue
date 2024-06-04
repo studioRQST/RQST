@@ -222,7 +222,7 @@ img:hover {
 @media screen and (max-width: 40rem) {
 
   section{
-    margin: 2rem 2rem 0 2rem;
+    margin: 2rem;
     height: 200vh;
   }
 
@@ -252,11 +252,12 @@ img:hover {
   }
 
   .flex-container-par {
-    margin: 0;
+    margin: 10rem 0;
     padding: 0;
     left: 50%;
     transform: translateX(-50%);
     text-align: center;
+    bottom: 0;
   }
 
   .title-uppercase span{
