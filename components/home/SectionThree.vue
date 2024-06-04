@@ -223,6 +223,7 @@ img:hover {
 
   section{
     margin: 2rem 2rem 0 2rem;
+    height: 200vh;
   }
 
   h3 {
@@ -251,12 +252,11 @@ img:hover {
   }
 
   .flex-container-par {
-    margin: 10rem 0;
+    margin: 0;
     padding: 0;
     left: 50%;
     transform: translateX(-50%);
     text-align: center;
-    bottom: -100%;
   }
 
   .title-uppercase span{
