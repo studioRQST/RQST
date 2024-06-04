@@ -235,9 +235,8 @@ img:hover {
 
   .flex-container-images {
     flex-direction: column;
-    margin: 10rem 0 8rem 0;
+    margin: 15rem 0;
     gap: 1rem;
-    margin-top: 15rem;
   }
 
   .image-wrapper-1, .image-wrapper-2, .image-wrapper-3 {
