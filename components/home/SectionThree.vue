@@ -257,7 +257,7 @@ img:hover {
     left: 50%;
     transform: translateX(-50%);
     text-align: center;
-    bottom: -55rem;
+    bottom: -100%;
   }
 
   .title-uppercase span{
