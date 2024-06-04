@@ -128,7 +128,6 @@ span {
   justify-content: center;
   align-items: center;
   gap: 2rem;
-
 }
 
 .image-wrapper-1, .image-wrapper-2, .image-wrapper-3 {
@@ -253,12 +252,12 @@ img:hover {
   }
 
   .flex-container-par {
-    margin: 0;
+    margin: 10rem 0;
     padding: 0;
     left: 50%;
     transform: translateX(-50%);
     text-align: center;
-    bottom: -45rem;
+    bottom: -55rem;
   }
 
   .title-uppercase span{
@@ -269,8 +268,7 @@ img:hover {
 @media screen and (max-width: 30rem) {
 
   section{
-    margin: 1rem 1rem 0 1rem;
-
+    margin: 1rem;
   }
 }
 
