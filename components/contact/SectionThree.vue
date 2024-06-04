@@ -21,25 +21,25 @@
       <div class="flex-wrapper-3">
 
         <h1 class="title-uppercase">Adres</h1>
-        <p>Postadres:<span>Bazelstraat 16, 3555CS Utrecht</span></p>
-
-
+        <p>Postadres:<span> De Bazelstraat 16, 3555 CS Utrecht</span></p>
       </div>
     </div>
-
-
   </section>
 </template>
 
 <style scoped>
 section {
-  margin: 2rem 2rem 0 2rem;
+  margin: 2rem 2.5rem 0 2rem;
 }
 
 h1 {
   font-size: 2.5rem;
   margin-bottom: 1rem;
 }
+
+p {
+    font-size: 1.2rem;
+  }
 
 span {
   display: block;
@@ -55,7 +55,7 @@ span {
   display: flex;
   flex-direction: column;
   outline: 5px solid var(--teriary-color-yellow);
-  border-radius: 5px;
+  border-radius: 15px 0 0 15px;
   color: var(--teriary-color-yellow);
   justify-content: center;
   padding-left: 6rem;

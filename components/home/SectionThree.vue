@@ -73,7 +73,7 @@ export default {
     </div>
 
     <div class="flex-container-par">
-<!--      <p class="title-uppercase">Ontdek<span> ons werk</span></p>-->
+     <p class="title-uppercase">Ontdek<span> ons werk</span></p>
       <NuxtLink href="/cases">
         <button class="primary-button bold-weight">Bekijk meer cases</button>
       </NuxtLink>
@@ -122,7 +122,7 @@ span {
 .flex-container-images {
   width: 100%;
   position: absolute;
-  top: -1.5rem;
+  top: -1rem;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -194,10 +194,6 @@ img:hover {
   h3 {
     font-size: 16rem;
   }
-
-  .flex-container-par {
-    bottom: -20vh;
-  }
 }
 
 @media screen and (max-width: 60rem) {
@@ -207,8 +203,7 @@ img:hover {
   }
 
   img {
-    height: 50%;
-    border-radius: 0 0 10px 10px;
+    border-radius: 10px;
   }
 
   .flex-container-images {
@@ -217,7 +212,6 @@ img:hover {
 
   .flex-container-par {
     margin-left: 3rem;
-    bottom: 8rem;
   }
 
   .title-uppercase{
@@ -233,20 +227,24 @@ img:hover {
   }
 
   h3 {
-    font-size: 8rem;
-    margin-top: 2rem;
-    -webkit-text-stroke: 2px var(--teriary-color-yellow);
+    position: absolute;
+    font-size: 5rem;
+    color: var(--teriary-color-yellow);
+    -webkit-text-stroke: 0;
+    top: 10rem;
   }
 
   .flex-container-images {
     flex-direction: column;
     margin: 10rem 0 8rem 0;
+    gap: 1rem;
+    margin-top: 15rem;
   }
 
   .image-wrapper-1, .image-wrapper-2, .image-wrapper-3 {
     width: 100%;
     height: 20rem;
-    margin-top: 0.5rem;
+    margin-top: 2rem;
   }
 
   img{
@@ -255,13 +253,12 @@ img:hover {
   }
 
   .flex-container-par {
-    bottom: 10vh;
     margin: 0;
     padding: 0;
     left: 50%;
     transform: translateX(-50%);
     text-align: center;
-
+    bottom: -45rem;
   }
 
   .title-uppercase span{
@@ -274,23 +271,6 @@ img:hover {
   section{
     margin: 1rem 1rem 0 1rem;
 
-  }
-
-  h3 {
-    position: absolute;
-    font-size: 5rem;
-    color: var(--teriary-color-yellow);
-    -webkit-text-stroke: 0;
-    top: 8%;
-  }
-
-  .flex-container-images {
-    gap: 1rem;
-    margin-top: 15rem;
-  }
-
-  .flex-container-par {
-    bottom: -110vh;
   }
 }
 

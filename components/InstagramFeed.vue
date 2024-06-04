@@ -2,7 +2,7 @@
 import {ref, onMounted, computed} from 'vue';
 import axios from 'axios';
 
-const ACCESS_TOKEN = 'IGQWRNcmU4NURYc2NiNmdlcVBSMDBYMjhnYXVhRXdDME5nMFRjRDRIZAWk3S00yNUFxMzV4eUJRWWF1NGJuelRSZA2VhS3N5c3JWYk5sclNiRUltbWNEaHJlY01LNDh4dHV1YmZAleVZASS0c0UQZDZD';
+const ACCESS_TOKEN = 'IGQWRNRzZADTm1mekdjd3J6RFFwb29DVDRoSzFSdE9qQzUxUlBGR2g0ZAFZA6YTVINjRSNHZAGVU05R0JRM3laTnpvbG1abjZA6d18yaWozUXhiWW5rVFN0UU42V1A2MEVJZA2hKbU1uT09zcVg2QQZDZD';
 
 const fetchInstagramFeed = async () => {
   try {
@@ -37,8 +37,6 @@ onMounted(async () => {
 
 <template>
   <section>
-
-
     <div class="instagram-feed">
       <h2 class="title-uppercase">Onze Instagram Showcase</h2>
       <div v-if="error" class="error">{{ error }}</div>
@@ -55,30 +53,39 @@ onMounted(async () => {
               </video>
             </template>
           </a>
-          <!--          <p v-if="post.caption">{{ post.caption }}</p>-->
+                   <!-- <p v-if="post.caption">{{ post.caption }}</p> -->
         </div>
       </div>
     </div>
-
-    <button class="primary-button bold-weight">Volg ons voor meer updates!</button>
-
+    <NuxtLink href="https://www.instagram.com/studio.rqst/">
+      <button class="primary-button bold-weight">Volg ons voor meer updates!</button>
+    </NuxtLink>
   </section>
 </template>
 
 <style scoped>
 
+:root {
+    --background-dark-purple: #45227A;
+    --second-background: #7952B3;
+    --primair-color-l-blue: #BEFBFF;
+    --secundair-color-l-purple: #F6EFFF;
+    --teriary-color-yellow: #F6FFBE;
+}
+
 section {
-  background-color: var(--background-dark-purple);
+  background-color: var(--secundair-color-l-purple);
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  padding: 10rem 0;
 }
 
 h2 {
-  color: var(--teriary-color-yellow);
-  padding-bottom: 3rem;
-  font-size: 3.5rem;
+  color: var(--background-dark-purple);
+  padding-bottom: 5rem;
+  font-size: 4rem;
 }
 
 p {
@@ -86,19 +93,29 @@ p {
 }
 
 button {
+  margin: auto;
+  background-color: var(--second-background);
+  color: var(--teriary-color-yellow);
+  border: solid 2px var(--second-background);
   margin-top: 4rem;
+}
+
+button:hover {
+  background-color: var(--secundair-color-l-purple);
+  color: var(--second-background);
+  border: solid 2px var(--second-background);
 }
 
 .feed {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   gap: 5rem;
 }
 
 .post {
-
   width: 300px;
 }
 
@@ -109,29 +126,29 @@ button {
   border-radius: 8px;
 }
 
-.error {
-  color: red;
-}
-
 /* Media queries voor verschillende schermformaten */
 
 
 /* TABLET */
 @media screen and (max-width: 60rem) {
-h2 {
-  line-height: 4rem;
+  h2 {
+    line-height: 4rem;
+  }
+
+  .feed {
+    gap: 2rem;
+  }
 }
 
-.feed {
-  flex-direction: column;
-  gap: 2rem;
+@media screen and (max-width: 40rem) {
+  h2 {
+    font-size: 3rem;
+    line-height: 3rem;
+    margin: 0 1rem;
+  }
+
+  .feed {
+    gap: 2rem;
+  }
 }
-
-}
-
-/* MOBILE L */
-@media screen and (max-width: 30rem) {
-
-}
-
 </style>
