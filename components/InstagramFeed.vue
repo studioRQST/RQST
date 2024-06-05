@@ -1,17 +1,12 @@
 <script setup>
-import {ref, onMounted, computed} from 'vue';
+import { ref, onMounted, computed } from 'vue';
 import axios from 'axios';
 
-const ACCESS_TOKEN = 'IGQWRNRzZADTm1mekdjd3J6RFFwb29DVDRoSzFSdE9qQzUxUlBGR2g0ZAFZA6YTVINjRSNHZAGVU05R0JRM3laTnpvbG1abjZA6d18yaWozUXhiWW5rVFN0UU42V1A2MEVJZA2hKbU1uT09zcVg2QQZDZD';
-
 const fetchInstagramFeed = async () => {
+  const API_URL = "https://v1.nocodeapi.com/studiorqst/instagram/BCojmeILPamuZJUh";
+
   try {
-    const response = await axios.get('https://graph.instagram.com/me/media', {
-      params: {
-        fields: 'id,caption,media_type,media_url,permalink,thumbnail_url,timestamp,username',
-        access_token: ACCESS_TOKEN
-      }
-    });
+    const response = await axios.get(API_URL);
     return response.data.data;
   } catch (error) {
     console.error('Error fetching Instagram feed:', error.response ? error.response.data : error.message);
@@ -34,6 +29,7 @@ onMounted(async () => {
   }
 });
 </script>
+
 
 <template>
   <section>

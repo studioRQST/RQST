@@ -1,7 +1,6 @@
 <template>
   <div>
     <homePijlers/>
-
     <div class="container">
       <div class="section-one">
         <HomeSectionOne/>
